@@ -1,0 +1,1 @@
+../../Cellar/zsh-autosuggestions/0.4.3/share/zsh-autosuggestions/zsh-autosuggestions.zsh

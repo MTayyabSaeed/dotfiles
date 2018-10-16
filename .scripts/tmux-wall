@@ -1,0 +1,8 @@
+#!/bin/zsh
+if [[ "$TERM" =~ "screen".* ]]; then
+	if [[ $INTMUX -ne 1 ]]; then
+		tmux display-message -p '#S' | xargs -I SESS figlet -c -f slant "=- SESS -="
+		tmux setenv INTMUX 1
+		export INTMUX='1'
+	fi		
+fi

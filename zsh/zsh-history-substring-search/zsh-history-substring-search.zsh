@@ -1,0 +1,1 @@
+../../Cellar/zsh-history-substring-search/1.0.1/share/zsh-history-substring-search/zsh-history-substring-search.zsh
