@@ -1,3 +1,13 @@
+# if you read this, make sure you checked the dependencies:
+# todo: create dependencies.md and link them here
+
+
+if [[ -z "$LC_ALL" ]]; then
+  export LC_ALL='en_US.UTF-8'
+fi
+
+
+# initializes the tmux-sessions
 if [[ "$TERM" =~ "screen".* ]]; then
 	if [[ ! -v INTMUX ]]; then
 		tmux new-window -t 2 -n dev 2>/dev/null
@@ -11,6 +21,11 @@ if [[ "$TERM" =~ "screen".* ]]; then
 	INTMUX=1
 fi		
 
+# this export has to remain above the tmux-initlialization
+export SAUCE="$HOME/.colorSauce"
+
+
+# instantiates the tmux-sessions
 if [ -z "$TMUX" ]; then
 	for label in static hotkey #toggler
 	do
@@ -18,27 +33,13 @@ if [ -z "$TMUX" ]; then
 	done
 fi
 
-autoload -U promptinit; promptinit; prompt pure
-unsetopt prompt_cr
 
-alias t="tmux new -s toggler tt"
-
-alias ..='cd ..'
-alias ...='cd ../..'
-alias ....='cd ../../..'
-alias "et"="vi ~/.tmux.conf"
-alias "ett"="vi ~/.tmuxtheme"
-alias ll='ls -alF'
-alias vi="vim"
-alias vim="/usr/local/Cellar/vim/8.1.0450/bin/vim"
-alias screenfetch="screenfetch -E"
-alias batfg="~/.tmux/plugins/tmux-battery/scripts/battery_status_fg.sh"
-alias batbg="~/.tmux/plugins/tmux-battery/scripts/battery_status_bg.sh"
 function tmuxToggle(){
 	tmux send-keys -t static:"tmux-admin" "tmux switch-client -t tmp" Enter
 	tmux send-keys -t hotkey:"tmux-admin" "tmux switch-client -t static" Enter
 	tmux send-keys -t tmp "tmux switch-client -t hotkey" Enter
 }
+
 
 function tt(){
 	tmux new -d -s tmp;
@@ -47,26 +48,54 @@ function tt(){
 	tmux kill-session -t tmp;
 }
 
+
+# aliases
+alias ..='cd ..'
+alias ...='cd ../..'
+alias ....='cd ../../..'
+alias ll='ls -alF'
+
+alias vi="vim"
+alias vim="/usr/local/Cellar/vim/8.1.0450/bin/vim"
+alias sauce="source $HOME/.zshrc"
+alias screenfetch="screenfetch -E"
+
 alias sroot="ssh root@10.0.0.165"
 alias sgeb="ssh max@10.144.42.227"
 
-alias showdesk="~/.scripts/desktop_an.sh"
-alias hidedesk="~/.scripts/desktop_aus.sh"
+alias hidedesk="~/.scripts/hidedesk.sh"
+alias showdesk="~/.scripts/showdesk.sh"
 
+
+# bindings
 bindkey '^[[1;9C' forward-word
 bindkey '^[[1;9D' backward-word
 bindkey "^[[A" history-beginning-search-backward
 bindkey "^[[B" history-beginning-search-forward
 
+
+# config
+HISTFILE=~/.zsh_history
 HISTSIZE=10000
 SAVEHIST=10000
-HISTFILE=~/.zsh_history
 
+
+# path
 PATH=/usr/local/bin:$PATH
+export LANG=en_US.UTF-8
 
+
+# prompt
+autoload -U promptinit; promptinit; prompt pure
+unsetopt prompt_cr
+
+
+# options
 setopt AUTO_CD
 setopt correct
 
+
+# plugins
 source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source /usr/local/share/zsh-history-substring-search/zsh-history-substring-search.zsh

@@ -19,8 +19,7 @@ def fmtLabels(q):
     d.update({k.replace(" ", ""): v for k, v in q.items()
               if v not in d.items() and not k.startswith("Ansi")})
 
-    home = os.path.expanduser("~")
-    saucePath = os.path.join(home, ".colorSauce")
+    saucePath = os.path.join(os.path.expanduser("~"), ".colorSauce")
 
     with open(saucePath, "w") as f:
         f.write("\n".join([f"{k}={v}" for k, v in d.items()]))

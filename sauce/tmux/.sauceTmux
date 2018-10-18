@@ -91,7 +91,7 @@ activeSeperatorColor="$windowSeperatorColor"
 
 batteryBg="$globalBackground"
 batteryFg="$globalTextColor"
-batteryBar="#[fg=$batteryFg,bg=$batteryBg]#{battery_percentage} #[fg=#{battery_status_bg}]#{battery_icon} "
+batteryBar="#[fg=$batteryFg,bg=$batteryBg,nobold]#{battery_percentage} #[fg=#{battery_status_bg}]#{battery_icon} "
 
 defaultIcon=""
 defaultBg="$globalBackground"
@@ -103,13 +103,13 @@ ramIcon=""
 ramBg="$globalBackground"
 ramFg="$globalTextColor"
 ramIconFg="$globalTextColor"
-ramBar="#[fg=$ramFg,bg=$ramBg]#{ram} $ramIcon"
+ramBar="#[fg=$ramFg,bg=$ramBg,nobold]#{ram} $ramIcon"
 
-sauceIcon="   "
-sauceBg="$globalBackground"
-sauceFg="$globalTextColor"
-sauceIconFg="$globalTextColor"
-sauceBar="#[fg=$sauceFg,bg=$sauceBg]$sauceIcon"
+themeIcon="   "
+themeBg="$globalBackground"
+themeFg="$globalTextColor"
+themeIconFg="$globalTextColor"
+themeBar="#[fg=$themeFg,bg=$themeBg]$themeIcon"
 
 sessionIcon=""
 sessionBg="$globalBackground"
@@ -117,7 +117,7 @@ sessionFg="$globalTextColor"
 sessionIconFg="$normalgreen"
 sessionBar="#[bg=$sessionBg] \
 #[fg=$sessionIconFg,bg=$sessionBg,bold] ${sessionIcon}  \
-#[fg=$sessionFg,bold]#S  \
+#[fg=$sessionFg,bold]#S \
 $seperatorRight"
 
 spotifyIcon="♪"
@@ -134,7 +134,7 @@ timeBar="#[fg=$timeFg,bg=$timeBg,nobold]%a %d.%b %H:%M"
 userIcon="" userBg="$globalBackground"
 userFg="$globalTextColor"
 userIconFg="$brightmagenta"
-userBar=" #[fg=$userIconFg,bg=$userBg]$userIcon #[fg=$userFg]$(whoami) ${seperatorRight}"
+userBar=" #[fg=$userIconFg,bg=$userBg]$userIcon #[fg=$userFg]$(whoami) $seperatorRight"
 
 
 set "window-status-format" "\
@@ -144,12 +144,10 @@ set "window-status-format" "\
 
 set "window-status-current-format" "\
 #[fg=$activeSeperatorColor,bg=$activeBg,nobold] ⌠\
-#[fg=$activeIconFg,bg=$activeBg,nobold] ${activeIcon}\
+#[fg=$activeIconFg,bg=$activeBg,nobold] $activeIcon\
 #[fg=$activeFg,bg=$activeBg,nobold]  #W \
 #[fg=$activeSeperatorColor,bg=$activeBg,nobold]⌡"
 
-set "status-right" "$seperatorLeft${ramBar}$seperatorLeft${batteryBar}$seperatorLeft${timeBar}$seperatorLeft${sauceBar}"
-#set "status-right" "${ramBar} ${batteryBar} ${timeBar} ${mainBar}"
-#set "status-right" "$spotifyBar} ${ramBar} ${batteryBar} ${timeBar} ${mainBar}"
+set "status-right" "$seperatorLeft$ramBar$seperatorLeft$batteryBar$seperatorLeft$timeBar$seperatorLeft$themeBar"
 
-set "status-left" "${sessionBar} ${userBar}"
+set "status-left" "$sessionBar $userBar"

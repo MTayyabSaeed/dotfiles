@@ -78,9 +78,10 @@ colorscheme 2357flat
 let g:airline_theme='2357flat'
 let g:airline_powerline_fonts=1
 let g:Powerline_symbols='unicode'
-hi SpellBad ctermfg=NONE ctermbg=NONE guifg=#yyyyyy guibg=#zzzzzz cterm=undercurl
-hi SpellCap ctermfg=NONE ctermbg=NONE guifg=#yyyyyy guibg=#zzzzzz cterm=undercurl
-hi SignColumn ctermbg=NONE
 
+hi SpellBad ctermfg=NONE ctermbg=NONE guifg=NONE guibg=NONE cterm=undercurl
+hi SpellCap ctermfg=NONE ctermbg=NONE guifg=NONE guibg=NONE cterm=undercurl
+
+hi SignColumn ctermbg=NONE guibg=NONE
 :command! -complete=file -nargs=1 Rpdf :r !pdftotext -nopgbrk <q-args> - |fmt -csw78
 
