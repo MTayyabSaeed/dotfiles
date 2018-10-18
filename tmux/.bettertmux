@@ -2,14 +2,7 @@
 
 # 
 
-tmux_blue=$(python3 ~/.dotfiles/colors.py normalblue)
-tmux_dark=$(python3 ~/.dotfiles/colors.py "Background Color")
-tmux_green=$(python3 ~/.dotfiles/colors.py normalgreen)
-tmux_grey=$(python3 ~/.dotfiles/colors.py normalwhite)
-tmux_red=$(python3 ~/.dotfiles/colors.py normalred)
-tmux_magenta=$(python3 ~/.dotfiles/colors.py normalmagenta)
-tmux_white=$(python3 ~/.dotfiles/colors.py brightwhite)
-tmux_yellow=$(python3 ~/.dotfiles/colors.py normalyellow)
+source ~/.dotfiles/colors.sh
 
 get() {
     local option=$1
@@ -42,57 +35,57 @@ set "status-left-length" "100"
 set "status-right-length" "100"
 set "status-right-attr" "none"
 
-set "message-fg" "$tmux_grey"
-set "message-bg" "$tmux_dark"
+set "message-fg" "$normalwhite"
+set "message-bg" "$BackgroundColor"
 
-set "message-command-fg" "$tmux_grey"
-set "message-command-bg" "$tmux_dark"
+set "message-command-fg" "$normalwhite"
+set "message-command-bg" "$BackgroundColor"
 
 set "status-attr" "none"
 set "status-left-attr" "none"
 
-setw "window-status-fg" "$tmux_dark"
-setw "window-status-bg" "$tmux_dark"
+setw "window-status-fg" "$BackgroundColor"
+setw "window-status-bg" "$BackgroundColor"
 setw "window-status-attr" "none"
 
-setw "window-status-activity-bg" "$tmux_dark"
-setw "window-status-activity-fg" "$tmux_dark"
+setw "window-status-activity-bg" "$BackgroundColor"
+setw "window-status-activity-fg" "$BackgroundColor"
 setw "window-status-activity-attr" "none"
 
 setw "window-status-separator" ""
 
 
-set "pane-border-fg" "$tmux_grey"
-set "pane-active-border-fg" "$tmux_grey"
+set "pane-border-fg" "$normalwhite"
+set "pane-active-border-fg" "$normalwhite"
 
-set "display-panes-active-colour" "$tmux_yellow"
-set "display-panes-colour" "$tmux_blue"
+set "display-panes-active-colour" "$brightyellow"
+set "display-panes-colour" "$normalblue"
 
-set "status-bg" "$tmux_dark"
-set "status-fg" "$tmux_grey"
+set "status-bg" "$BackgroundColor"
+set "status-fg" "$normalwhite"
 
-set "@prefix_highlight_fg" "$tmux_dark"
-set "@prefix_highlight_bg" "$tmux_green"
-set "@prefix_highlight_copy_mode_attr" "fg=$tmux_dark,bg=$tmux_green"
+set "@prefix_highlight_fg" "$BackgroundColor"
+set "@prefix_highlight_bg" "$normalgreen"
+set "@prefix_highlight_copy_mode_attr" "fg=$BackgroundColor,bg=$normalgreen"
 set "@prefix_highlight_output_prefix" "  "
 
 spotify_bar="\
-#[fg=$tmux_grey,bg=$tmux_dark]\
+#[fg=$normalwhite,bg=$BackgroundColor]\
  #{spotify_artist}: #{spotify_track} "
 
 battery_bar="\
-#[fg=$tmux_grey,bg=$tmux_dark, bold]\
+#[fg=$normalwhite,bg=$BackgroundColor, bold]\
  #{battery_percentage} \
-#[fg=#{battery_status_bg},bg=$tmux_dark]\
+#[fg=#{battery_status_bg},bg=$BackgroundColor]\
  \
 "
 
 time_bar="\
-#[fg=$tmux_grey,bg=$tmux_dark, bold]\
+#[fg=$normalwhite,bg=$BackgroundColor, bold]\
  \
-#[fg=$tmux_grey,bg=$tmux_dark, nobold]\
+#[fg=$normalwhite,bg=$BackgroundColor, nobold]\
 %a %d.%b %H:%M  \
-#[fg=$tmux_grey,bg=$tmux_dark, bold]\
+#[fg=$normalwhite,bg=$BackgroundColor, bold]\
   \
    "
 
@@ -100,36 +93,36 @@ set "status-right" "${battery_bar}${time_bar}"
 #set "status-right" "${spotify_bar}${battery_bar}${time_bar}"
 
 set "status-left" "\
-#[fg=$tmux_blue,bg=$tmux_grey,bold]\
+#[fg=$normalblue,bg=$normalwhite,bold]\
   \
  \
-#[fg=$tmux_dark,bg=$tmux_grey,bold]\
+#[fg=$BackgroundColor,bg=$normalwhite,bold]\
 #S\
   \
-#[fg=$tmux_grey,bg=$tmux_dark,nobold,nounderscore,noitalics]\
+#[fg=$normalwhite,bg=$BackgroundColor,nobold,nounderscore,noitalics]\
 \
  \
-#[fg=$tmux_magenta,bg=$tmux_dark,bold,nounderscore,noitalics]\
+#[fg=$brightmagenta,bg=$BackgroundColor,bold,nounderscore,noitalics]\
  \
-#[fg=$tmux_grey,bg=$tmux_dark,bold,nounderscore,noitalics]\
+#[fg=$normalwhite,bg=$BackgroundColor,bold,nounderscore,noitalics]\
 $(whoami)\
   \
 "
 
 set "window-status-format" "\
-#[fg=$tmux_grey,bg=$tmux_dark, nobold]\
+#[fg=$normalwhite,bg=$BackgroundColor, nobold]\
  \
 \
  \
 #W \
-#[fg=$tmux_grey,bg=$tmux_dark, bold]\
+#[fg=$normalwhite,bg=$BackgroundColor, bold]\
  "
 
 set "window-status-current-format" "\
-#[fg=$tmux_grey,bg=$tmux_dark,nobold,nounderscore,noitalics]\
+#[fg=$normalwhite,bg=$BackgroundColor,nobold,nounderscore,noitalics]\
  \
-#[fg=$tmux_yellow,bg=$tmux_dark,nobold]\
+#[fg=$normalyellow,bg=$BackgroundColor,nobold]\
  \
  \
-#[fg=$tmux_grey,bg=$tmux_dark, bold]\
+#[fg=$normalwhite,bg=$BackgroundColor, bold]\
  "
