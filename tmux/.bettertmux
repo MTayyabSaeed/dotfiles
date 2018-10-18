@@ -42,10 +42,10 @@ set "status-left-length" "100"
 set "status-right-length" "100"
 set "status-right-attr" "none"
 
-set "message-fg" "$tmux_white"
+set "message-fg" "$tmux_grey"
 set "message-bg" "$tmux_dark"
 
-set "message-command-fg" "$tmux_white"
+set "message-command-fg" "$tmux_grey"
 set "message-command-bg" "$tmux_dark"
 
 set "status-attr" "none"
@@ -62,14 +62,14 @@ setw "window-status-activity-attr" "none"
 setw "window-status-separator" ""
 
 
-set "pane-border-fg" "$tmux_white"
-set "pane-active-border-fg" "$tmux_white"
+set "pane-border-fg" "$tmux_grey"
+set "pane-active-border-fg" "$tmux_grey"
 
 set "display-panes-active-colour" "$tmux_yellow"
 set "display-panes-colour" "$tmux_blue"
 
 set "status-bg" "$tmux_dark"
-set "status-fg" "$tmux_white"
+set "status-fg" "$tmux_grey"
 
 set "@prefix_highlight_fg" "$tmux_dark"
 set "@prefix_highlight_bg" "$tmux_green"
@@ -77,22 +77,22 @@ set "@prefix_highlight_copy_mode_attr" "fg=$tmux_dark,bg=$tmux_green"
 set "@prefix_highlight_output_prefix" "  "
 
 spotify_bar="\
-#[fg=$tmux_white,bg=$tmux_dark]\
+#[fg=$tmux_grey,bg=$tmux_dark]\
  #{spotify_artist}: #{spotify_track} "
 
 battery_bar="\
-#[fg=$tmux_white,bg=$tmux_dark, bold]\
- \
+#[fg=$tmux_grey,bg=$tmux_dark, bold]\
+ #{battery_percentage} \
 #[fg=#{battery_status_bg},bg=$tmux_dark]\
-#{battery_percentage}  \
+ \
 "
 
 time_bar="\
-#[fg=$tmux_white,bg=$tmux_dark, bold]\
-  \
-#[fg=$tmux_white,bg=$tmux_dark, nobold]\
+#[fg=$tmux_grey,bg=$tmux_dark, bold]\
+ \
+#[fg=$tmux_grey,bg=$tmux_dark, nobold]\
 %a %d.%b %H:%M  \
-#[fg=$tmux_white,bg=$tmux_dark, bold]\
+#[fg=$tmux_grey,bg=$tmux_dark, bold]\
   \
    "
 
@@ -100,30 +100,36 @@ set "status-right" "${battery_bar}${time_bar}"
 #set "status-right" "${spotify_bar}${battery_bar}${time_bar}"
 
 set "status-left" "\
-#[fg=$tmux_white,bg=$tmux_blue,bold]  \
- #S  \
-#[fg=$tmux_blue,bg=$tmux_dark,nobold,nounderscore,noitalics]\
- \
+#[fg=$tmux_blue,bg=$tmux_grey,bold]\
+  \
+ \
+#[fg=$tmux_dark,bg=$tmux_grey,bold]\
+#S\
+  \
+#[fg=$tmux_grey,bg=$tmux_dark,nobold,nounderscore,noitalics]\
+\
+ \
 #[fg=$tmux_magenta,bg=$tmux_dark,bold,nounderscore,noitalics]\
  \
-#[fg=$tmux_white,bg=$tmux_dark,bold,nounderscore,noitalics]\
-$(whoami)  \
-\
-"
+#[fg=$tmux_grey,bg=$tmux_dark,bold,nounderscore,noitalics]\
+$(whoami)\
+  \
+"
 
 set "window-status-format" "\
-#[fg=$tmux_white,bg=$tmux_dark, nobold]\
-   \
-#W  \
-#[fg=$tmux_white,bg=$tmux_dark, nobold]\
-\
-"
+#[fg=$tmux_grey,bg=$tmux_dark, nobold]\
+ \
+\
+ \
+#W \
+#[fg=$tmux_grey,bg=$tmux_dark, bold]\
+ "
 
 set "window-status-current-format" "\
-#[fg=$tmux_white,bg=$tmux_dark,nobold,nounderscore,noitalics]\
+#[fg=$tmux_grey,bg=$tmux_dark,nobold,nounderscore,noitalics]\
  \
 #[fg=$tmux_yellow,bg=$tmux_dark,nobold]\
-  \
-#[fg=$tmux_white,bg=$tmux_dark, bold]\
-\
-"
+ \
+ \
+#[fg=$tmux_grey,bg=$tmux_dark, bold]\
+ "
