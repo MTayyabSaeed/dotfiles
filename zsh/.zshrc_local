@@ -1,7 +1,3 @@
-# if you read this, make sure you checked the dependencies:
-# todo: create dependencies.md and link them here
-
-
 if [[ -z "$LC_ALL" ]]; then
 	export LC_ALL='en_US.UTF-8'
 fi
@@ -27,7 +23,7 @@ export SAUCE="$HOME/.colorSauce"
 
 # instantiates the tmux-sessions
 if [ -z "$TMUX" ]; then
-	for label in static hotkey #toggler
+	for label in float hotkey #toggler
 	do
 		tmux new -s $label -n main -d 2>/dev/null
 	done
@@ -35,8 +31,8 @@ fi
 
 
 function tmuxToggle(){
-	tmux send-keys -t static:"bg" "tmux switch-client -t tmp" Enter
-	tmux send-keys -t hotkey:"bg" "tmux switch-client -t static" Enter
+	tmux send-keys -t float:"bg" "tmux switch-client -t tmp" Enter
+	tmux send-keys -t hotkey:"bg" "tmux switch-client -t float" Enter
 	tmux send-keys -t tmp "tmux switch-client -t hotkey" Enter
 }
 
@@ -86,19 +82,6 @@ PATH=/usr/local/bin:$PATH
 export LANG=en_US.UTF-8
 
 
-# prompt
-autoload -U promptinit; promptinit; prompt pure
-unsetopt prompt_cr
-
-
 # options
 setopt AUTO_CD
 setopt correct
-
-
-# plugins
-source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
-source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-source /usr/local/share/zsh-history-substring-search/zsh-history-substring-search.zsh
-
-source $SAUCE
