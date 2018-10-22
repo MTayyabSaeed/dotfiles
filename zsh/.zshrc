@@ -3,7 +3,7 @@
 
 
 if [[ -z "$LC_ALL" ]]; then
-  export LC_ALL='en_US.UTF-8'
+	export LC_ALL='en_US.UTF-8'
 fi
 
 
@@ -13,7 +13,7 @@ if [[ "$TERM" =~ "screen".* ]]; then
 		tmux new-window -t 2 -n dev 2>/dev/null
 		tmux new-window -t 3 -n misc 2>/dev/null
 		tmux new-window -t 4 -n tests 2>/dev/null
-		tmux new-window -t 5 -n tmux-admin 2>/dev/null
+		tmux new-window -t 5 -n "bg" 2>/dev/null
 		tmux select-window -t 1
 		clear
 		source ~/.scripts/tmux-wall
@@ -35,8 +35,8 @@ fi
 
 
 function tmuxToggle(){
-	tmux send-keys -t static:"tmux-admin" "tmux switch-client -t tmp" Enter
-	tmux send-keys -t hotkey:"tmux-admin" "tmux switch-client -t static" Enter
+	tmux send-keys -t static:"bg" "tmux switch-client -t tmp" Enter
+	tmux send-keys -t hotkey:"bg" "tmux switch-client -t static" Enter
 	tmux send-keys -t tmp "tmux switch-client -t hotkey" Enter
 }
 

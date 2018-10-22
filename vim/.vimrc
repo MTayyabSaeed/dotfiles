@@ -74,8 +74,8 @@ hi Normal ctermbg=None
 syntax enable
 set t_Co=256
 
-colorscheme 2357flat
-let g:airline_theme='2357flat'
+colorscheme hightechbanana
+let g:airline_theme='hightechbanana'
 let g:airline_powerline_fonts=1
 let g:Powerline_symbols='unicode'
 

@@ -1,3 +1,4 @@
+import json
 import os
 import sys
 import xml.etree.ElementTree as ET
@@ -19,10 +20,7 @@ def fmtLabels(q):
     d.update({k.replace(" ", ""): v for k, v in q.items()
               if v not in d.items() and not k.startswith("Ansi")})
 
-    saucePath = os.path.join(os.path.expanduser("~"), ".colorSauce")
-
-    with open(saucePath, "w") as f:
-        f.write("\n".join([f"{k}={v}" for k, v in d.items()]))
+    return d
 
 
 def toHex():
@@ -48,4 +46,14 @@ def toHex():
 
 if __name__ == "__main__":
     d = toHex()
-    fmtLabels(d)
+    d = fmtLabels(d)
+
+    home = os.path.expanduser("~")
+    theme = os.path.join(home, ".dotfiles/sauce/theme.json")
+    with open(theme, "r") as f:
+        d.update(json.loads(f.read()))
+
+    saucePath = os.path.join(home, ".colorSauce")
+    with open(saucePath, "w") as f:
+        f.write("\n".join([f"{k}='{v}'" for k, v in d.items()]))
+
