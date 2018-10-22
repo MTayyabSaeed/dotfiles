@@ -20318,7 +20318,7 @@
 	<key>NSWindow Frame SUUpdateAlert</key>
 	<string>410 376 620 392 0 0 1440 877 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>513 463 928 394 0 0 1440 877 </string>
+	<string>350 183 1016 512 0 0 1440 877 </string>
 	<key>NSWindow Frame UKCrashReporter</key>
 	<string>99 293 592 584 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
@@ -20691,14 +20691,40 @@
 			</dict>
 			<key>Guid</key>
 			<string>5A925D99-2C75-461C-B1E8-87A88BEDA1F4</string>
+			<key>Has Hotkey</key>
+			<false/>
 			<key>Horizontal Spacing</key>
 			<real>1</real>
+			<key>HotKey Activated By Modifier</key>
+			<false/>
+			<key>HotKey Alternate Shortcuts</key>
+			<array/>
+			<key>HotKey Characters</key>
+			<string> </string>
+			<key>HotKey Characters Ignoring Modifiers</key>
+			<string> </string>
+			<key>HotKey Key Code</key>
+			<integer>49</integer>
+			<key>HotKey Modifier Activation</key>
+			<integer>0</integer>
+			<key>HotKey Modifier Flags</key>
+			<integer>262144</integer>
+			<key>HotKey Window Animates</key>
+			<false/>
+			<key>HotKey Window AutoHides</key>
+			<true/>
+			<key>HotKey Window Dock Click Action</key>
+			<integer>1</integer>
+			<key>HotKey Window Floats</key>
+			<true/>
+			<key>HotKey Window Reopens On Activation</key>
+			<false/>
 			<key>Icon</key>
 			<integer>0</integer>
 			<key>Idle Code</key>
 			<integer>0</integer>
 			<key>Initial Text</key>
-			<string>tmux attach -t static</string>
+			<string>tmux attach -t float</string>
 			<key>Jobs to Ignore</key>
 			<array>
 				<string>rlogin</string>
