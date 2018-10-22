@@ -75,6 +75,7 @@ bindkey "^[[B" history-beginning-search-forward
 
 
 # config
+bindkey -v
 HISTFILE=~/.zsh_history
 HISTSIZE=10000
 SAVEHIST=10000
@@ -99,3 +100,5 @@ setopt correct
 source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source /usr/local/share/zsh-history-substring-search/zsh-history-substring-search.zsh
+
+source $SAUCE

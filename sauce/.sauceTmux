@@ -31,7 +31,7 @@ setw() {
 
 globalBackground="$BackgroundColor"
 globalTextColor="$brightwhite"
-windowSeperatorColor="$brightblack"
+windowSeperatorColor="$normalwhite"
 
 #set "status" "on"
 set "status-justify" "centre"

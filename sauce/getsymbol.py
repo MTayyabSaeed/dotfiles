@@ -1,4 +1,5 @@
 import json
+import os
 
 symdict = {
     # fyi
@@ -22,10 +23,10 @@ symdict = {
     "session": "",
     "theme": "  ",
     "user": "",
-    "globalSideSeperatorIcon": "",
+    "globalSideSeperator": "",
     "globalSeperatorIcon": "",
-    "rightSideSeperatorIcon": "",
-    "leftSideSeperatorIcon": "",
+    "rightSideSeperator": "",
+    "leftSideSeperator": "",
 
     # -windows
     "main": "",
@@ -33,18 +34,20 @@ symdict = {
     "misc": "",
     "tests": "拾",
     "bg": "",
+    "hireddit": "",
+    "github": "",
     "other": " ",
 
     # cur env
-    "arch": " ",
-    "centos": " ",
-    "manjaro": "   ",
-    "redhat": " ",
-    "ubuntu": " ",
-    "otherLinux": " ",
-    "raspbian": " ",
-    "bsd": "    ",
-    "macos": "    ",
+    #"arch": " ",
+    #"centos": " ",
+    #"manjaro": "   ",
+    #"redhat": " ",
+    #"ubuntu": " ",
+    #"otherLinux": " ",
+    #"raspbian": " ",
+    #"bsd": "    ",
+    #"macos": "    ",
 
     # misc
     # "dna": "ﮂ",
@@ -60,5 +63,6 @@ symdict = {
     # "DEAD": "",
 }
 
-with open("theme.json", "w") as f:
+p = os.path.join(os.path.dirname(os.path.realpath(__file__)), "theme.json")
+with open(p, "w") as f:
     f.write(json.dumps({k+"Icon": v for k, v in symdict.items()}))
