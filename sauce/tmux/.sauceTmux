@@ -91,7 +91,7 @@ activeSeperatorColor="$windowSeperatorColor"
 
 batteryBg="$globalBackground"
 batteryFg="$globalTextColor"
-batteryBar="#[fg=$batteryFg,bg=$batteryBg,nobold]#{battery_percentage} #[fg=#{battery_status_bg}]#{battery_icon} "
+batteryBar="#[fg=$batteryFg,bg=$batteryBg,nobold]#{battery_percentage} #[fg=#{battery_status_fg}]#{battery_icon} "
 
 defaultIcon=""
 defaultBg="$globalBackground"
