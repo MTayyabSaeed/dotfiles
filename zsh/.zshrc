@@ -10,9 +10,9 @@ fi
 # initializes the tmux-sessions
 if [[ "$TERM" =~ "screen".* ]]; then
 	if [[ ! -v INTMUX ]]; then
-		tmux new-window -t 2 -n dev 2>/dev/null
-		tmux new-window -t 3 -n misc 2>/dev/null
-		tmux new-window -t 4 -n tests 2>/dev/null
+		tmux new-window -t 2 -c "$HOME/repos" -n dev 2>/dev/null
+		tmux new-window -t 3 -c "$HOME/.tests" -n tests 2>/dev/null
+		tmux new-window -t 4 -n misc 2>/dev/null
 		tmux new-window -t 5 -n "bg" 2>/dev/null
 		tmux select-window -t 1
 		clear
