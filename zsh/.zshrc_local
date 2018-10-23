@@ -64,13 +64,18 @@ alias showdesk="~/.scripts/showdesk.sh"
 
 
 # bindings
+export EDITOR=vim
+export VISUAL=vim
+
 bindkey '^[[1;9C' forward-word
 bindkey '^[[1;9D' backward-word
 bindkey "^[[A" history-beginning-search-backward
 bindkey "^[[B" history-beginning-search-forward
+bindkey -M vicmd v edit-command-line
 
 
 # config
+autoload -U edit-command-line
 bindkey -v
 HISTFILE=~/.zsh_history
 HISTSIZE=10000
@@ -85,3 +90,6 @@ export LANG=en_US.UTF-8
 # options
 setopt AUTO_CD
 setopt correct
+
+zle -N edit-command-line
+bindkey -M vicmd v edit-command-line

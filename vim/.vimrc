@@ -44,6 +44,8 @@ autocmd VimEnter *
 	\ | endif
 
 set backupdir=/Users/max/.vim_backups/
+set undodir=~/.vim/undo-dir
+set undofile
 
 noremap <tj> :tabn
 noremap <tk> :tabp
