@@ -1,6 +1,7 @@
 
 function clipToVim {
 	t=$HOME/.clipboard
+	echo >! "$t"
 	vim -c ".!pbpaste" "$t"
 }
 

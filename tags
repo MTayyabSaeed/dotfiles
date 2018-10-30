@@ -1,0 +1,537 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+AutoClose	vim/.vim/plugin/delimitMate.vim	/^function! s:AutoClose() "{{{$/;"	f
+DelimitMateDo	vim/.vim/plugin/delimitMate.vim	/^function! s:DelimitMateDo(...) "{{{$/;"	f
+DelimitMateReload	vim/.vim/plugin/delimitMate.vim	/^command! -bar DelimitMateReload call s:DelimitMateDo(1)$/;"	c
+DelimitMateSwitch	vim/.vim/plugin/delimitMate.vim	/^command! -bar DelimitMateSwitch call s:DelimitMateSwitch()$/;"	c
+DelimitMateSwitch	vim/.vim/plugin/delimitMate.vim	/^function! s:DelimitMateSwitch() "{{{$/;"	f
+DelimitMateTest	vim/.vim/plugin/delimitMate.vim	/^command! -bar DelimitMateTest call s:TestMappingsDo()$/;"	c
+ET	sauce/prepsauce.py	/^import xml.etree.ElementTree as ET$/;"	i
+ExtraMappings	vim/.vim/plugin/delimitMate.vim	/^function! s:ExtraMappings() "{{{$/;"	f
+FGforBG	vim/.vim/after/syntax/css.vim	/^function! s:FGforBG(bg)$/;"	f
+Map	vim/.vim/plugin/delimitMate.vim	/^function! s:Map() "{{{$/;"	f
+NoAutoClose	vim/.vim/plugin/delimitMate.vim	/^function! s:NoAutoClose() "{{{$/;"	f
+PreviewCSSColorInLine	vim/.vim/after/syntax/css.vim	/^function! s:PreviewCSSColorInLine(where)$/;"	f
+Rgb2xterm	vim/.vim/after/syntax/css.vim	/^function! s:Rgb2xterm(color)$/;"	f
+SetMatcher	vim/.vim/after/syntax/css.vim	/^function! s:SetMatcher(clr,pat)$/;"	f
+SetNamedColor	vim/.vim/after/syntax/css.vim	/^function! s:SetNamedColor(clr,name)$/;"	f
+TestMappingsDo	vim/.vim/plugin/delimitMate.vim	/^function! s:TestMappingsDo() "{{{$/;"	f
+TriggerAbb	vim/.vim/plugin/delimitMate.vim	/^function! s:TriggerAbb() "{{{$/;"	f
+Unmap	vim/.vim/plugin/delimitMate.vim	/^function! s:Unmap() " {{{$/;"	f
+Xterm2rgb	vim/.vim/after/syntax/css.vim	/^function! s:Xterm2rgb(color) $/;"	f
+append_ul	vim/.vim/autoload/plug.vim	/^function! s:append_ul(lnum, text)$/;"	f
+ask	vim/.vim/autoload/plug.vim	/^function! s:ask(message, ...)$/;"	f
+ask_no_interrupt	vim/.vim/autoload/plug.vim	/^function! s:ask_no_interrupt(...)$/;"	f
+assign_name	vim/.vim/autoload/plug.vim	/^function! s:assign_name()$/;"	f
+assoc	vim/.vim/autoload/plug.vim	/^function! s:assoc(dict, key, val)$/;"	f
+bang	vim/.vim/autoload/plug.vim	/^function! s:bang(cmd, ...)$/;"	f
+bar	vim/.vim/autoload/plug.vim	/^function! s:bar()$/;"	f
+check_ruby	vim/.vim/autoload/plug.vim	/^function! s:check_ruby()$/;"	f
+checkout	vim/.vim/autoload/plug.vim	/^function! s:checkout(spec)$/;"	f
+chsh	vim/.vim/autoload/plug.vim	/^function! s:chsh(swap)$/;"	f
+clean	vim/.vim/autoload/plug.vim	/^function! s:clean(force)$/;"	f
+color	vim/.vim/after/syntax/css.vim	/^   let color = s:Xterm2rgb(c)$/;"	v
+colors_name	vim/.vim/colors/github.vim	/^let colors_name = "github"$/;"	v
+compare_git_uri	vim/.vim/autoload/plug.vim	/^function! s:compare_git_uri(a, b)$/;"	f
+d	sauce/prepsauce.py	/^    d = fmtLabels(d)$/;"	v
+d	sauce/prepsauce.py	/^    d = toHex()$/;"	v
+define_commands	vim/.vim/autoload/plug.vim	/^function! s:define_commands()$/;"	f
+delete	vim/.vim/autoload/plug.vim	/^function! s:delete(range, force)$/;"	f
+delete_op	vim/.vim/autoload/plug.vim	/^function! s:delete_op(type, ...)$/;"	f
+delimitMate	vim/.vim/plugin/delimitMate.vim	/^augroup delimitMate$/;"	a
+delimitMate#BS	vim/.vim/autoload/delimitMate.vim	/^function! delimitMate#BS() " {{{$/;"	f
+delimitMate#BalancedParens	vim/.vim/autoload/delimitMate.vim	/^function! delimitMate#BalancedParens(char) "{{{$/;"	f
+delimitMate#CursorIdx	vim/.vim/autoload/delimitMate.vim	/^function! delimitMate#CursorIdx() "{{{$/;"	f
+delimitMate#ExpandReturn	vim/.vim/autoload/delimitMate.vim	/^function! delimitMate#ExpandReturn() "{{{$/;"	f
+delimitMate#ExpandSpace	vim/.vim/autoload/delimitMate.vim	/^function! delimitMate#ExpandSpace() "{{{$/;"	f
+delimitMate#Get	vim/.vim/autoload/delimitMate.vim	/^function! delimitMate#Get(...) "{{{$/;"	f
+delimitMate#GetCharFromCursor	vim/.vim/autoload/delimitMate.vim	/^function! delimitMate#GetCharFromCursor(...) "{{{$/;"	f
+delimitMate#GetCurrentSyntaxRegion	vim/.vim/autoload/delimitMate.vim	/^function! delimitMate#GetCurrentSyntaxRegion() "{{{$/;"	f
+delimitMate#GetCurrentSyntaxRegionIf	vim/.vim/autoload/delimitMate.vim	/^function! delimitMate#GetCurrentSyntaxRegionIf(char) "{{{$/;"	f
+delimitMate#GetSyntaxRegion	vim/.vim/autoload/delimitMate.vim	/^function! delimitMate#GetSyntaxRegion(line, col) "{{{$/;"	f
+delimitMate#IsCRExpansion	vim/.vim/autoload/delimitMate.vim	/^function! delimitMate#IsCRExpansion(...) " {{{$/;"	f
+delimitMate#IsEmptyPair	vim/.vim/autoload/delimitMate.vim	/^function! delimitMate#IsEmptyPair(str) "{{{$/;"	f
+delimitMate#IsForbidden	vim/.vim/autoload/delimitMate.vim	/^function! delimitMate#IsForbidden(char) "{{{$/;"	f
+delimitMate#IsSmartQuote	vim/.vim/autoload/delimitMate.vim	/^function! delimitMate#IsSmartQuote(char) "{{{$/;"	f
+delimitMate#IsSpaceExpansion	vim/.vim/autoload/delimitMate.vim	/^function! delimitMate#IsSpaceExpansion() " {{{$/;"	f
+delimitMate#JumpAny	vim/.vim/autoload/delimitMate.vim	/^function! delimitMate#JumpAny(...) " {{{$/;"	f
+delimitMate#JumpMany	vim/.vim/autoload/delimitMate.vim	/^function! delimitMate#JumpMany() " {{{$/;"	f
+delimitMate#JumpOut	vim/.vim/autoload/delimitMate.vim	/^function! delimitMate#JumpOut(char) "{{{$/;"	f
+delimitMate#LeftQ	vim/.vim/autoload/delimitMate.vim	/^function! delimitMate#LeftQ(char) "{{{$/;"	f
+delimitMate#ParenDelim	vim/.vim/autoload/delimitMate.vim	/^function! delimitMate#ParenDelim(right) " {{{$/;"	f
+delimitMate#QuoteDelim	vim/.vim/autoload/delimitMate.vim	/^function! delimitMate#QuoteDelim(char) "{{{$/;"	f
+delimitMate#RightQ	vim/.vim/autoload/delimitMate.vim	/^function! delimitMate#RightQ(char) "{{{$/;"	f
+delimitMate#Set	vim/.vim/autoload/delimitMate.vim	/^function! delimitMate#Set(...) "{{{$/;"	f
+delimitMate#ShouldJump	vim/.vim/autoload/delimitMate.vim	/^function! delimitMate#ShouldJump(...) "{{{$/;"	f
+delimitMate#SkipDelim	vim/.vim/autoload/delimitMate.vim	/^function! delimitMate#SkipDelim(char) "{{{$/;"	f
+delimitMate#TestMappings	vim/.vim/autoload/delimitMate.vim	/^function! delimitMate#TestMappings() "{{{$/;"	f
+delimitMate#WithinEmptyMatchpair	vim/.vim/autoload/delimitMate.vim	/^function! delimitMate#WithinEmptyMatchpair() "{{{$/;"	f
+delimitMate#WithinEmptyPair	vim/.vim/autoload/delimitMate.vim	/^function! delimitMate#WithinEmptyPair() "{{{$/;"	f
+delimitMate#WithinEmptyQuotes	vim/.vim/autoload/delimitMate.vim	/^function! delimitMate#WithinEmptyQuotes() "{{{$/;"	f
+delimitMate_version	vim/.vim/plugin/delimitMate.vim	/^let delimitMate_version = "2.7"$/;"	v
+diff	vim/.vim/autoload/plug.vim	/^function! s:diff()$/;"	f
+dirpath	vim/.vim/autoload/plug.vim	/^  function! s:dirpath(path)$/;"	f
+do	vim/.vim/autoload/plug.vim	/^function! s:do(pull, force, todo)$/;"	f
+doautocmd	vim/.vim/autoload/plug.vim	/^function! s:doautocmd(...)$/;"	f
+dobufread	vim/.vim/autoload/plug.vim	/^function! s:dobufread(names)$/;"	f
+err	vim/.vim/autoload/plug.vim	/^function! s:err(msg)$/;"	f
+esc	vim/.vim/autoload/plug.vim	/^function! s:esc(path)$/;"	f
+escrtp	vim/.vim/autoload/plug.vim	/^function! s:escrtp(path)$/;"	f
+etree	sauce/prepsauce.py	/^import xml.etree.ElementTree as ET$/;"	i
+exists	vim/.vim/autoload/delimitMate.vim	/^function! s:exists(name, ...) "{{{$/;"	f
+extract_name	vim/.vim/autoload/plug.vim	/^function! s:extract_name(str, prefix, suffix)$/;"	f
+find_name	vim/.vim/autoload/plug.vim	/^function! s:find_name(lnum)$/;"	f
+finish	vim/.vim/autoload/plug.vim	/^function! s:finish(pull)$/;"	f
+finish_bindings	vim/.vim/autoload/plug.vim	/^function! s:finish_bindings()$/;"	f
+fmtLabels	sauce/prepsauce.py	/^def fmtLabels(q):$/;"	f
+format_git_log	vim/.vim/autoload/plug.vim	/^function! s:format_git_log(line)$/;"	f
+format_message	vim/.vim/autoload/plug.vim	/^function! s:format_message(bullet, name, message)$/;"	f
+g	vim/.vim/autoload/delimitMate.vim	/^function! s:g(name, ...) "{{{$/;"	f
+g	vim/.vim/plugin/delimitMate.vim	/^function! s:g(...) " {{{$/;"	f
+g:airline#themes#hightechbanana#palette	themes/hightechbanana/airline/hightechbanana.vim	/^let g:airline#themes#hightechbanana#palette = {}$/;"	v
+g:airline#themes#hightechbanana#palette	themes/hightechbanana/airline/hightechbanana.vim	/^let g:airline#themes#hightechbanana#palette.accents = {$/;"	v
+g:airline#themes#hightechbanana#palette	themes/hightechbanana/airline/hightechbanana.vim	/^let g:airline#themes#hightechbanana#palette.ctrlp = airline#extensions#ctrlp#generate_color_map($/;"	v
+g:airline#themes#hightechbanana#palette	themes/hightechbanana/airline/hightechbanana.vim	/^let g:airline#themes#hightechbanana#palette.inactive = airline#themes#generate_color_map(s:IA, s:IA, s:IA)$/;"	v
+g:airline#themes#hightechbanana#palette	themes/hightechbanana/airline/hightechbanana.vim	/^let g:airline#themes#hightechbanana#palette.inactive_modified = {$/;"	v
+g:airline#themes#hightechbanana#palette	themes/hightechbanana/airline/hightechbanana.vim	/^let g:airline#themes#hightechbanana#palette.insert = airline#themes#generate_color_map(s:I1, s:I2, s:I3)$/;"	v
+g:airline#themes#hightechbanana#palette	themes/hightechbanana/airline/hightechbanana.vim	/^let g:airline#themes#hightechbanana#palette.insert.airline_warning =$/;"	v
+g:airline#themes#hightechbanana#palette	themes/hightechbanana/airline/hightechbanana.vim	/^let g:airline#themes#hightechbanana#palette.insert_modified = {$/;"	v
+g:airline#themes#hightechbanana#palette	themes/hightechbanana/airline/hightechbanana.vim	/^let g:airline#themes#hightechbanana#palette.insert_modified.airline_warning =$/;"	v
+g:airline#themes#hightechbanana#palette	themes/hightechbanana/airline/hightechbanana.vim	/^let g:airline#themes#hightechbanana#palette.insert_paste = {$/;"	v
+g:airline#themes#hightechbanana#palette	themes/hightechbanana/airline/hightechbanana.vim	/^let g:airline#themes#hightechbanana#palette.normal = airline#themes#generate_color_map(s:N1, s:N2, s:N3)$/;"	v
+g:airline#themes#hightechbanana#palette	themes/hightechbanana/airline/hightechbanana.vim	/^let g:airline#themes#hightechbanana#palette.normal.airline_warning = [$/;"	v
+g:airline#themes#hightechbanana#palette	themes/hightechbanana/airline/hightechbanana.vim	/^let g:airline#themes#hightechbanana#palette.normal_modified = {$/;"	v
+g:airline#themes#hightechbanana#palette	themes/hightechbanana/airline/hightechbanana.vim	/^let g:airline#themes#hightechbanana#palette.normal_modified.airline_warning =$/;"	v
+g:airline#themes#hightechbanana#palette	themes/hightechbanana/airline/hightechbanana.vim	/^let g:airline#themes#hightechbanana#palette.replace = copy(g:airline#themes#hightechbanana#palette.insert)$/;"	v
+g:airline#themes#hightechbanana#palette	themes/hightechbanana/airline/hightechbanana.vim	/^let g:airline#themes#hightechbanana#palette.replace.airline_a = [ '#ff243a' , s:I1[1] , 196 , s:I1[3] , '' ]$/;"	v
+g:airline#themes#hightechbanana#palette	themes/hightechbanana/airline/hightechbanana.vim	/^let g:airline#themes#hightechbanana#palette.replace.airline_warning =$/;"	v
+g:airline#themes#hightechbanana#palette	themes/hightechbanana/airline/hightechbanana.vim	/^let g:airline#themes#hightechbanana#palette.replace.airline_z = [ '#ff243a' , s:I1[1] , 196 , s:I1[3] , '' ]$/;"	v
+g:airline#themes#hightechbanana#palette	themes/hightechbanana/airline/hightechbanana.vim	/^let g:airline#themes#hightechbanana#palette.replace_modified = g:airline#themes#hightechbanana#palette.insert_modified$/;"	v
+g:airline#themes#hightechbanana#palette	themes/hightechbanana/airline/hightechbanana.vim	/^let g:airline#themes#hightechbanana#palette.replace_modified.airline_warning =$/;"	v
+g:airline#themes#hightechbanana#palette	themes/hightechbanana/airline/hightechbanana.vim	/^let g:airline#themes#hightechbanana#palette.tabline = {$/;"	v
+g:airline#themes#hightechbanana#palette	themes/hightechbanana/airline/hightechbanana.vim	/^let g:airline#themes#hightechbanana#palette.visual = airline#themes#generate_color_map(s:V1, s:V2, s:V3)$/;"	v
+g:airline#themes#hightechbanana#palette	themes/hightechbanana/airline/hightechbanana.vim	/^let g:airline#themes#hightechbanana#palette.visual.airline_warning =$/;"	v
+g:airline#themes#hightechbanana#palette	themes/hightechbanana/airline/hightechbanana.vim	/^let g:airline#themes#hightechbanana#palette.visual_modified = {$/;"	v
+g:airline#themes#hightechbanana#palette	themes/hightechbanana/airline/hightechbanana.vim	/^let g:airline#themes#hightechbanana#palette.visual_modified.airline_warning =$/;"	v
+g:challenger_deep_termcolors	vim/.vim/colors/challenger_deep.vim	/^  let g:challenger_deep_termcolors = 256$/;"	v
+g:challenger_deep_terminal_italics	vim/.vim/colors/challenger_deep.vim	/^  let g:challenger_deep_terminal_italics = 0$/;"	v
+g:colors_name	themes/hightechbanana/vim/hightechbanana.vim	/^let g:colors_name = "hightechbanana"$/;"	v
+g:colors_name	vim/.vim/colors/SerialExperimentsLain.vim	/^let g:colors_name = "SerialExperimentsLain"$/;"	v
+g:colors_name	vim/.vim/colors/artesanal.vim	/^let g:colors_name = 'artesanal'$/;"	v
+g:colors_name	vim/.vim/colors/challenger_deep.vim	/^let g:colors_name='challenger_deep'$/;"	v
+g:colors_name	vim/.vim/colors/flatland.vim	/^let g:colors_name = "flatland"$/;"	v
+g:colors_name	vim/.vim/colors/flattown.vim	/^let g:colors_name = "flattown"$/;"	v
+g:colors_name	vim/.vim/colors/fruchtig.vim	/^let g:colors_name="fruchtig"$/;"	v
+g:colors_name	vim/.vim/colors/heman.vim	/^let g:colors_name="heman"$/;"	v
+g:colors_name	vim/.vim/colors/lucario.vim	/^let g:colors_name = "lucario"$/;"	v
+g:colors_name	vim/.vim/colors/material.vim	/^let g:colors_name = "vim-material"$/;"	v
+g:colors_name	vim/.vim/colors/neutron.vim	/^let g:colors_name="neutron"$/;"	v
+g:loaded_delimitMate	vim/.vim/plugin/delimitMate.vim	/^let g:loaded_delimitMate = 1$/;"	v
+g:loaded_plug	vim/.vim/autoload/plug.vim	/^let g:loaded_plug = 1$/;"	v
+g:plugs_order	vim/.vim/autoload/plug.vim	/^  let g:plugs_order = get(g:, 'plugs_order', keys(g:plugs))$/;"	v
+g:terminal_color_0	vim/.vim/colors/artesanal.vim	/^    let g:terminal_color_0  = '#141414'$/;"	v
+g:terminal_color_0	vim/.vim/colors/artesanal.vim	/^  let g:terminal_color_0  = '#fbfbfb'$/;"	v
+g:terminal_color_0	vim/.vim/colors/challenger_deep.vim	/^let g:terminal_color_0 = s:bg_dark.gui$/;"	v
+g:terminal_color_1	vim/.vim/colors/artesanal.vim	/^    let g:terminal_color_1  = '#ff4d4d'$/;"	v
+g:terminal_color_1	vim/.vim/colors/artesanal.vim	/^  let g:terminal_color_1  = '#b72e2e'$/;"	v
+g:terminal_color_1	vim/.vim/colors/challenger_deep.vim	/^let g:terminal_color_1 = s:red.gui$/;"	v
+g:terminal_color_10	vim/.vim/colors/artesanal.vim	/^    let g:terminal_color_10 = '#b3ffcc'$/;"	v
+g:terminal_color_10	vim/.vim/colors/artesanal.vim	/^  let g:terminal_color_10 = '#b3ffcc'$/;"	v
+g:terminal_color_10	vim/.vim/colors/challenger_deep.vim	/^let g:terminal_color_10 = s:dark_green.gui$/;"	v
+g:terminal_color_11	vim/.vim/colors/artesanal.vim	/^    let g:terminal_color_11 = '#ffffaf'$/;"	v
+g:terminal_color_11	vim/.vim/colors/artesanal.vim	/^  let g:terminal_color_11 = '#ffd699'$/;"	v
+g:terminal_color_11	vim/.vim/colors/challenger_deep.vim	/^let g:terminal_color_11 = s:dark_yellow.gui$/;"	v
+g:terminal_color_12	vim/.vim/colors/artesanal.vim	/^    let g:terminal_color_12 = '#cceeff'$/;"	v
+g:terminal_color_12	vim/.vim/colors/artesanal.vim	/^  let g:terminal_color_12 = '#cceeff'$/;"	v
+g:terminal_color_12	vim/.vim/colors/challenger_deep.vim	/^let g:terminal_color_12 = s:dark_blue.gui$/;"	v
+g:terminal_color_13	vim/.vim/colors/artesanal.vim	/^    let g:terminal_color_13 = '#d1c4e9'$/;"	v
+g:terminal_color_13	vim/.vim/colors/artesanal.vim	/^  let g:terminal_color_13 = '#d1c4e9'$/;"	v
+g:terminal_color_13	vim/.vim/colors/challenger_deep.vim	/^let g:terminal_color_13 = s:dark_purple.gui$/;"	v
+g:terminal_color_14	vim/.vim/colors/artesanal.vim	/^    let g:terminal_color_14 = '#b2dfdb'$/;"	v
+g:terminal_color_14	vim/.vim/colors/artesanal.vim	/^  let g:terminal_color_14 = '#b2dfdb'$/;"	v
+g:terminal_color_14	vim/.vim/colors/challenger_deep.vim	/^let g:terminal_color_14 = s:dark_cyan.gui$/;"	v
+g:terminal_color_15	vim/.vim/colors/artesanal.vim	/^    let g:terminal_color_15 = '#d3d3d3'$/;"	v
+g:terminal_color_15	vim/.vim/colors/artesanal.vim	/^  let g:terminal_color_15 = '#505050'$/;"	v
+g:terminal_color_15	vim/.vim/colors/challenger_deep.vim	/^let g:terminal_color_15 = s:dark_clouds.gui$/;"	v
+g:terminal_color_2	vim/.vim/colors/artesanal.vim	/^    let g:terminal_color_2  = '#47b36b'$/;"	v
+g:terminal_color_2	vim/.vim/colors/artesanal.vim	/^  let g:terminal_color_2  = '#47b36b'$/;"	v
+g:terminal_color_2	vim/.vim/colors/challenger_deep.vim	/^let g:terminal_color_2 = s:green.gui$/;"	v
+g:terminal_color_3	vim/.vim/colors/artesanal.vim	/^    let g:terminal_color_3  = '#ffff80'$/;"	v
+g:terminal_color_3	vim/.vim/colors/artesanal.vim	/^  let g:terminal_color_3  = '#ff9900'$/;"	v
+g:terminal_color_3	vim/.vim/colors/challenger_deep.vim	/^let g:terminal_color_3 = s:yellow.gui$/;"	v
+g:terminal_color_4	vim/.vim/colors/artesanal.vim	/^    let g:terminal_color_4  = '#7ab1cc'$/;"	v
+g:terminal_color_4	vim/.vim/colors/artesanal.vim	/^  let g:terminal_color_4  = '#5995b3'$/;"	v
+g:terminal_color_4	vim/.vim/colors/challenger_deep.vim	/^let g:terminal_color_4 = s:blue.gui$/;"	v
+g:terminal_color_5	vim/.vim/colors/artesanal.vim	/^    let g:terminal_color_5  = '#ab47bc'$/;"	v
+g:terminal_color_5	vim/.vim/colors/artesanal.vim	/^  let g:terminal_color_5  = '#ab47bc'$/;"	v
+g:terminal_color_5	vim/.vim/colors/challenger_deep.vim	/^let g:terminal_color_5 = s:purple.gui$/;"	v
+g:terminal_color_6	vim/.vim/colors/artesanal.vim	/^    let g:terminal_color_6  = '#009688'$/;"	v
+g:terminal_color_6	vim/.vim/colors/artesanal.vim	/^  let g:terminal_color_6  = '#009688'$/;"	v
+g:terminal_color_6	vim/.vim/colors/challenger_deep.vim	/^let g:terminal_color_6 = s:cyan.gui$/;"	v
+g:terminal_color_7	vim/.vim/colors/artesanal.vim	/^    let g:terminal_color_7  = '#fbfbfb'$/;"	v
+g:terminal_color_7	vim/.vim/colors/artesanal.vim	/^  let g:terminal_color_7  = '#141414'$/;"	v
+g:terminal_color_7	vim/.vim/colors/challenger_deep.vim	/^let g:terminal_color_7 = s:clouds.gui$/;"	v
+g:terminal_color_8	vim/.vim/colors/artesanal.vim	/^    let g:terminal_color_8  = '#696969'$/;"	v
+g:terminal_color_8	vim/.vim/colors/artesanal.vim	/^  let g:terminal_color_8  = '#696969'$/;"	v
+g:terminal_color_8	vim/.vim/colors/challenger_deep.vim	/^let g:terminal_color_8 = s:bg_subtle.gui$/;"	v
+g:terminal_color_9	vim/.vim/colors/artesanal.vim	/^    let g:terminal_color_9  = '#ff9999'$/;"	v
+g:terminal_color_9	vim/.vim/colors/artesanal.vim	/^  let g:terminal_color_9  = '#ff9999'$/;"	v
+g:terminal_color_9	vim/.vim/colors/challenger_deep.vim	/^let g:terminal_color_9 = s:dark_red.gui$/;"	v
+get	sauce/.sauceTmux	/^get() {$/;"	f
+get_charge_color_settings	sauce/tmux/battery_status_fg.sh	/^get_charge_color_settings() {$/;"	f
+get_os_icon	sauce/sauce-decorators/scripts/os-decorators.sh	/^get_os_icon() {$/;"	f
+get_window_icon	sauce/sauce-decorators/scripts/window-decorators.sh	/^get_window_icon() {$/;"	f
+git_validate	vim/.vim/autoload/plug.vim	/^function! s:git_validate(spec, check_branch)$/;"	f
+git_version_requirement	vim/.vim/autoload/plug.vim	/^function! s:git_version_requirement(...)$/;"	f
+glob	vim/.vim/autoload/plug.vim	/^function! s:glob(from, pattern)$/;"	f
+glob_dir	vim/.vim/autoload/plug.vim	/^function! s:glob_dir(path)$/;"	f
+gui	vim/.vim/colors/material.vim	/^function! s:gui(color)$/;"	f
+h	vim/.vim/colors/challenger_deep.vim	/^function! s:h(group, style)$/;"	f
+hash_match	vim/.vim/autoload/plug.vim	/^function! s:hash_match(a, b)$/;"	f
+hi	vim/.vim/colors/material.vim	/^function! s:hi(group, guifg, guibg, ctermfg, ctermbg, attr)$/;"	f
+home	sauce/prepsauce.py	/^    home = os.path.expanduser("~")$/;"	v
+i	vim/.vim/after/syntax/css.vim	/^      let i = i+1$/;"	v
+i	vim/.vim/after/syntax/css.vim	/^   let i = 1$/;"	v
+i	vim/.vim/after/syntax/css.vim	/^   let i = s:SetNamedColor('#000000', 'black')$/;"	v
+i	vim/.vim/after/syntax/css.vim	/^   let i = s:SetNamedColor('#000080', 'navy')$/;"	v
+i	vim/.vim/after/syntax/css.vim	/^   let i = s:SetNamedColor('#00008B','DarkBlue')$/;"	v
+i	vim/.vim/after/syntax/css.vim	/^   let i = s:SetNamedColor('#0000CD','MediumBlue')$/;"	v
+i	vim/.vim/after/syntax/css.vim	/^   let i = s:SetNamedColor('#0000ff', 'blue')$/;"	v
+i	vim/.vim/after/syntax/css.vim	/^   let i = s:SetNamedColor('#006400','DarkGreen')$/;"	v
+i	vim/.vim/after/syntax/css.vim	/^   let i = s:SetNamedColor('#008000', 'green')$/;"	v
+i	vim/.vim/after/syntax/css.vim	/^   let i = s:SetNamedColor('#008080', 'teal')$/;"	v
+i	vim/.vim/after/syntax/css.vim	/^   let i = s:SetNamedColor('#008B8B','DarkCyan')$/;"	v
+i	vim/.vim/after/syntax/css.vim	/^   let i = s:SetNamedColor('#00BFFF','DeepSkyBlue')$/;"	v
+i	vim/.vim/after/syntax/css.vim	/^   let i = s:SetNamedColor('#00CED1','DarkTurquoise')$/;"	v
+i	vim/.vim/after/syntax/css.vim	/^   let i = s:SetNamedColor('#00FA9A','MediumSpringGreen')$/;"	v
+i	vim/.vim/after/syntax/css.vim	/^   let i = s:SetNamedColor('#00FF7F','SpringGreen')$/;"	v
+i	vim/.vim/after/syntax/css.vim	/^   let i = s:SetNamedColor('#00FFFF','Cyan')$/;"	v
+i	vim/.vim/after/syntax/css.vim	/^   let i = s:SetNamedColor('#00ff00', 'lime')$/;"	v
+i	vim/.vim/after/syntax/css.vim	/^   let i = s:SetNamedColor('#00ffff', 'aqua')$/;"	v
+i	vim/.vim/after/syntax/css.vim	/^   let i = s:SetNamedColor('#191970','MidnightBlue')$/;"	v
+i	vim/.vim/after/syntax/css.vim	/^   let i = s:SetNamedColor('#1E90FF','DodgerBlue')$/;"	v
+i	vim/.vim/after/syntax/css.vim	/^   let i = s:SetNamedColor('#20B2AA','LightSeaGreen')$/;"	v
+i	vim/.vim/after/syntax/css.vim	/^   let i = s:SetNamedColor('#228B22','ForestGreen')$/;"	v
+i	vim/.vim/after/syntax/css.vim	/^   let i = s:SetNamedColor('#2E8B57','SeaGreen')$/;"	v
+i	vim/.vim/after/syntax/css.vim	/^   let i = s:SetNamedColor('#2F4F4F','DarkSlateGray')$/;"	v
+i	vim/.vim/after/syntax/css.vim	/^   let i = s:SetNamedColor('#2F4F4F','DarkSlateGrey')$/;"	v
+i	vim/.vim/after/syntax/css.vim	/^   let i = s:SetNamedColor('#32CD32','LimeGreen')$/;"	v
+i	vim/.vim/after/syntax/css.vim	/^   let i = s:SetNamedColor('#3CB371','MediumSeaGreen')$/;"	v
+i	vim/.vim/after/syntax/css.vim	/^   let i = s:SetNamedColor('#40E0D0','Turquoise')$/;"	v
+i	vim/.vim/after/syntax/css.vim	/^   let i = s:SetNamedColor('#4169E1','RoyalBlue')$/;"	v
+i	vim/.vim/after/syntax/css.vim	/^   let i = s:SetNamedColor('#4682B4','SteelBlue')$/;"	v
+i	vim/.vim/after/syntax/css.vim	/^   let i = s:SetNamedColor('#483D8B','DarkSlateBlue')$/;"	v
+i	vim/.vim/after/syntax/css.vim	/^   let i = s:SetNamedColor('#48D1CC','MediumTurquoise')$/;"	v
+i	vim/.vim/after/syntax/css.vim	/^   let i = s:SetNamedColor('#4B0082','Indigo')$/;"	v
+i	vim/.vim/after/syntax/css.vim	/^   let i = s:SetNamedColor('#556B2F','DarkOliveGreen')$/;"	v
+i	vim/.vim/after/syntax/css.vim	/^   let i = s:SetNamedColor('#5F9EA0','CadetBlue')$/;"	v
+i	vim/.vim/after/syntax/css.vim	/^   let i = s:SetNamedColor('#6495ED','CornflowerBlue')$/;"	v
+i	vim/.vim/after/syntax/css.vim	/^   let i = s:SetNamedColor('#66CDAA','MediumAquaMarine')$/;"	v
+i	vim/.vim/after/syntax/css.vim	/^   let i = s:SetNamedColor('#696969','DimGray')$/;"	v
+i	vim/.vim/after/syntax/css.vim	/^   let i = s:SetNamedColor('#696969','DimGrey')$/;"	v
+i	vim/.vim/after/syntax/css.vim	/^   let i = s:SetNamedColor('#6A5ACD','SlateBlue')$/;"	v
+i	vim/.vim/after/syntax/css.vim	/^   let i = s:SetNamedColor('#6B8E23','OliveDrab')$/;"	v
+i	vim/.vim/after/syntax/css.vim	/^   let i = s:SetNamedColor('#708090','SlateGray')$/;"	v
+i	vim/.vim/after/syntax/css.vim	/^   let i = s:SetNamedColor('#708090','SlateGrey')$/;"	v
+i	vim/.vim/after/syntax/css.vim	/^   let i = s:SetNamedColor('#778899','LightSlateGray')$/;"	v
+i	vim/.vim/after/syntax/css.vim	/^   let i = s:SetNamedColor('#778899','LightSlateGrey')$/;"	v
+i	vim/.vim/after/syntax/css.vim	/^   let i = s:SetNamedColor('#7B68EE','MediumSlateBlue')$/;"	v
+i	vim/.vim/after/syntax/css.vim	/^   let i = s:SetNamedColor('#7CFC00','LawnGreen')$/;"	v
+i	vim/.vim/after/syntax/css.vim	/^   let i = s:SetNamedColor('#7FFF00','Chartreuse')$/;"	v
+i	vim/.vim/after/syntax/css.vim	/^   let i = s:SetNamedColor('#7FFFD4','Aquamarine')$/;"	v
+i	vim/.vim/after/syntax/css.vim	/^   let i = s:SetNamedColor('#800000', 'maroon')$/;"	v
+i	vim/.vim/after/syntax/css.vim	/^   let i = s:SetNamedColor('#800080', 'purple')$/;"	v
+i	vim/.vim/after/syntax/css.vim	/^   let i = s:SetNamedColor('#808000', 'olive')$/;"	v
+i	vim/.vim/after/syntax/css.vim	/^   let i = s:SetNamedColor('#808080', 'gray')$/;"	v
+i	vim/.vim/after/syntax/css.vim	/^   let i = s:SetNamedColor('#808080','Grey')$/;"	v
+i	vim/.vim/after/syntax/css.vim	/^   let i = s:SetNamedColor('#87CEEB','SkyBlue')$/;"	v
+i	vim/.vim/after/syntax/css.vim	/^   let i = s:SetNamedColor('#87CEFA','LightSkyBlue')$/;"	v
+i	vim/.vim/after/syntax/css.vim	/^   let i = s:SetNamedColor('#8A2BE2','BlueViolet')$/;"	v
+i	vim/.vim/after/syntax/css.vim	/^   let i = s:SetNamedColor('#8B0000','DarkRed')$/;"	v
+i	vim/.vim/after/syntax/css.vim	/^   let i = s:SetNamedColor('#8B008B','DarkMagenta')$/;"	v
+i	vim/.vim/after/syntax/css.vim	/^   let i = s:SetNamedColor('#8B4513','SaddleBrown')$/;"	v
+i	vim/.vim/after/syntax/css.vim	/^   let i = s:SetNamedColor('#8FBC8F','DarkSeaGreen')$/;"	v
+i	vim/.vim/after/syntax/css.vim	/^   let i = s:SetNamedColor('#90EE90','LightGreen')$/;"	v
+i	vim/.vim/after/syntax/css.vim	/^   let i = s:SetNamedColor('#9370D8','MediumPurple')$/;"	v
+i	vim/.vim/after/syntax/css.vim	/^   let i = s:SetNamedColor('#9400D3','DarkViolet')$/;"	v
+i	vim/.vim/after/syntax/css.vim	/^   let i = s:SetNamedColor('#98FB98','PaleGreen')$/;"	v
+i	vim/.vim/after/syntax/css.vim	/^   let i = s:SetNamedColor('#9932CC','DarkOrchid')$/;"	v
+i	vim/.vim/after/syntax/css.vim	/^   let i = s:SetNamedColor('#9ACD32','YellowGreen')$/;"	v
+i	vim/.vim/after/syntax/css.vim	/^   let i = s:SetNamedColor('#A0522D','Sienna')$/;"	v
+i	vim/.vim/after/syntax/css.vim	/^   let i = s:SetNamedColor('#A52A2A','Brown')$/;"	v
+i	vim/.vim/after/syntax/css.vim	/^   let i = s:SetNamedColor('#A9A9A9','DarkGray')$/;"	v
+i	vim/.vim/after/syntax/css.vim	/^   let i = s:SetNamedColor('#A9A9A9','DarkGrey')$/;"	v
+i	vim/.vim/after/syntax/css.vim	/^   let i = s:SetNamedColor('#ADD8E6','LightBlue')$/;"	v
+i	vim/.vim/after/syntax/css.vim	/^   let i = s:SetNamedColor('#ADFF2F','GreenYellow')$/;"	v
+i	vim/.vim/after/syntax/css.vim	/^   let i = s:SetNamedColor('#AFEEEE','PaleTurquoise')$/;"	v
+i	vim/.vim/after/syntax/css.vim	/^   let i = s:SetNamedColor('#B0C4DE','LightSteelBlue')$/;"	v
+i	vim/.vim/after/syntax/css.vim	/^   let i = s:SetNamedColor('#B0E0E6','PowderBlue')$/;"	v
+i	vim/.vim/after/syntax/css.vim	/^   let i = s:SetNamedColor('#B22222','FireBrick')$/;"	v
+i	vim/.vim/after/syntax/css.vim	/^   let i = s:SetNamedColor('#B8860B','DarkGoldenRod')$/;"	v
+i	vim/.vim/after/syntax/css.vim	/^   let i = s:SetNamedColor('#BA55D3','MediumOrchid')$/;"	v
+i	vim/.vim/after/syntax/css.vim	/^   let i = s:SetNamedColor('#BC8F8F','RosyBrown')$/;"	v
+i	vim/.vim/after/syntax/css.vim	/^   let i = s:SetNamedColor('#BDB76B','DarkKhaki')$/;"	v
+i	vim/.vim/after/syntax/css.vim	/^   let i = s:SetNamedColor('#C71585','MediumVioletRed')$/;"	v
+i	vim/.vim/after/syntax/css.vim	/^   let i = s:SetNamedColor('#CD5C5C','IndianRed')$/;"	v
+i	vim/.vim/after/syntax/css.vim	/^   let i = s:SetNamedColor('#CD853F','Peru')$/;"	v
+i	vim/.vim/after/syntax/css.vim	/^   let i = s:SetNamedColor('#D2691E','Chocolate')$/;"	v
+i	vim/.vim/after/syntax/css.vim	/^   let i = s:SetNamedColor('#D2B48C','Tan')$/;"	v
+i	vim/.vim/after/syntax/css.vim	/^   let i = s:SetNamedColor('#D3D3D3','LightGray')$/;"	v
+i	vim/.vim/after/syntax/css.vim	/^   let i = s:SetNamedColor('#D3D3D3','LightGrey')$/;"	v
+i	vim/.vim/after/syntax/css.vim	/^   let i = s:SetNamedColor('#D87093','PaleVioletRed')$/;"	v
+i	vim/.vim/after/syntax/css.vim	/^   let i = s:SetNamedColor('#D8BFD8','Thistle')$/;"	v
+i	vim/.vim/after/syntax/css.vim	/^   let i = s:SetNamedColor('#DA70D6','Orchid')$/;"	v
+i	vim/.vim/after/syntax/css.vim	/^   let i = s:SetNamedColor('#DAA520','GoldenRod')$/;"	v
+i	vim/.vim/after/syntax/css.vim	/^   let i = s:SetNamedColor('#DC143C','Crimson')$/;"	v
+i	vim/.vim/after/syntax/css.vim	/^   let i = s:SetNamedColor('#DCDCDC','Gainsboro')$/;"	v
+i	vim/.vim/after/syntax/css.vim	/^   let i = s:SetNamedColor('#DDA0DD','Plum')$/;"	v
+i	vim/.vim/after/syntax/css.vim	/^   let i = s:SetNamedColor('#DEB887','BurlyWood')$/;"	v
+i	vim/.vim/after/syntax/css.vim	/^   let i = s:SetNamedColor('#E0FFFF','LightCyan')$/;"	v
+i	vim/.vim/after/syntax/css.vim	/^   let i = s:SetNamedColor('#E6E6FA','Lavender')$/;"	v
+i	vim/.vim/after/syntax/css.vim	/^   let i = s:SetNamedColor('#E9967A','DarkSalmon')$/;"	v
+i	vim/.vim/after/syntax/css.vim	/^   let i = s:SetNamedColor('#EE82EE','Violet')$/;"	v
+i	vim/.vim/after/syntax/css.vim	/^   let i = s:SetNamedColor('#EEE8AA','PaleGoldenRod')$/;"	v
+i	vim/.vim/after/syntax/css.vim	/^   let i = s:SetNamedColor('#F08080','LightCoral')$/;"	v
+i	vim/.vim/after/syntax/css.vim	/^   let i = s:SetNamedColor('#F0E68C','Khaki')$/;"	v
+i	vim/.vim/after/syntax/css.vim	/^   let i = s:SetNamedColor('#F0F8FF','AliceBlue')$/;"	v
+i	vim/.vim/after/syntax/css.vim	/^   let i = s:SetNamedColor('#F0FFF0','HoneyDew')$/;"	v
+i	vim/.vim/after/syntax/css.vim	/^   let i = s:SetNamedColor('#F0FFFF','Azure')$/;"	v
+i	vim/.vim/after/syntax/css.vim	/^   let i = s:SetNamedColor('#F4A460','SandyBrown')$/;"	v
+i	vim/.vim/after/syntax/css.vim	/^   let i = s:SetNamedColor('#F5DEB3','Wheat')$/;"	v
+i	vim/.vim/after/syntax/css.vim	/^   let i = s:SetNamedColor('#F5F5DC','Beige')$/;"	v
+i	vim/.vim/after/syntax/css.vim	/^   let i = s:SetNamedColor('#F5F5F5','WhiteSmoke')$/;"	v
+i	vim/.vim/after/syntax/css.vim	/^   let i = s:SetNamedColor('#F5FFFA','MintCream')$/;"	v
+i	vim/.vim/after/syntax/css.vim	/^   let i = s:SetNamedColor('#F8F8FF','GhostWhite')$/;"	v
+i	vim/.vim/after/syntax/css.vim	/^   let i = s:SetNamedColor('#FA8072','Salmon')$/;"	v
+i	vim/.vim/after/syntax/css.vim	/^   let i = s:SetNamedColor('#FAEBD7','AntiqueWhite')$/;"	v
+i	vim/.vim/after/syntax/css.vim	/^   let i = s:SetNamedColor('#FAF0E6','Linen')$/;"	v
+i	vim/.vim/after/syntax/css.vim	/^   let i = s:SetNamedColor('#FAFAD2','LightGoldenRodYellow')$/;"	v
+i	vim/.vim/after/syntax/css.vim	/^   let i = s:SetNamedColor('#FDF5E6','OldLace')$/;"	v
+i	vim/.vim/after/syntax/css.vim	/^   let i = s:SetNamedColor('#FF00FF','Magenta')$/;"	v
+i	vim/.vim/after/syntax/css.vim	/^   let i = s:SetNamedColor('#FF1493','DeepPink')$/;"	v
+i	vim/.vim/after/syntax/css.vim	/^   let i = s:SetNamedColor('#FF4500','OrangeRed')$/;"	v
+i	vim/.vim/after/syntax/css.vim	/^   let i = s:SetNamedColor('#FF6347','Tomato')$/;"	v
+i	vim/.vim/after/syntax/css.vim	/^   let i = s:SetNamedColor('#FF69B4','HotPink')$/;"	v
+i	vim/.vim/after/syntax/css.vim	/^   let i = s:SetNamedColor('#FF7F50','Coral')$/;"	v
+i	vim/.vim/after/syntax/css.vim	/^   let i = s:SetNamedColor('#FF8C00','Darkorange')$/;"	v
+i	vim/.vim/after/syntax/css.vim	/^   let i = s:SetNamedColor('#FFA07A','LightSalmon')$/;"	v
+i	vim/.vim/after/syntax/css.vim	/^   let i = s:SetNamedColor('#FFB6C1','LightPink')$/;"	v
+i	vim/.vim/after/syntax/css.vim	/^   let i = s:SetNamedColor('#FFC0CB','Pink')$/;"	v
+i	vim/.vim/after/syntax/css.vim	/^   let i = s:SetNamedColor('#FFD700','Gold')$/;"	v
+i	vim/.vim/after/syntax/css.vim	/^   let i = s:SetNamedColor('#FFDAB9','PeachPuff')$/;"	v
+i	vim/.vim/after/syntax/css.vim	/^   let i = s:SetNamedColor('#FFDEAD','NavajoWhite')$/;"	v
+i	vim/.vim/after/syntax/css.vim	/^   let i = s:SetNamedColor('#FFE4B5','Moccasin')$/;"	v
+i	vim/.vim/after/syntax/css.vim	/^   let i = s:SetNamedColor('#FFE4C4','Bisque')$/;"	v
+i	vim/.vim/after/syntax/css.vim	/^   let i = s:SetNamedColor('#FFE4E1','MistyRose')$/;"	v
+i	vim/.vim/after/syntax/css.vim	/^   let i = s:SetNamedColor('#FFEBCD','BlanchedAlmond')$/;"	v
+i	vim/.vim/after/syntax/css.vim	/^   let i = s:SetNamedColor('#FFEFD5','PapayaWhip')$/;"	v
+i	vim/.vim/after/syntax/css.vim	/^   let i = s:SetNamedColor('#FFF0F5','LavenderBlush')$/;"	v
+i	vim/.vim/after/syntax/css.vim	/^   let i = s:SetNamedColor('#FFF5EE','SeaShell')$/;"	v
+i	vim/.vim/after/syntax/css.vim	/^   let i = s:SetNamedColor('#FFF8DC','Cornsilk')$/;"	v
+i	vim/.vim/after/syntax/css.vim	/^   let i = s:SetNamedColor('#FFFACD','LemonChiffon')$/;"	v
+i	vim/.vim/after/syntax/css.vim	/^   let i = s:SetNamedColor('#FFFAF0','FloralWhite')$/;"	v
+i	vim/.vim/after/syntax/css.vim	/^   let i = s:SetNamedColor('#FFFAFA','Snow')$/;"	v
+i	vim/.vim/after/syntax/css.vim	/^   let i = s:SetNamedColor('#FFFFE0','LightYellow')$/;"	v
+i	vim/.vim/after/syntax/css.vim	/^   let i = s:SetNamedColor('#FFFFF0','Ivory')$/;"	v
+i	vim/.vim/after/syntax/css.vim	/^   let i = s:SetNamedColor('#c0c0c0', 'silver')$/;"	v
+i	vim/.vim/after/syntax/css.vim	/^   let i = s:SetNamedColor('#ff0000', 'red')$/;"	v
+i	vim/.vim/after/syntax/css.vim	/^   let i = s:SetNamedColor('#ff00ff', 'fuchsia')$/;"	v
+i	vim/.vim/after/syntax/css.vim	/^   let i = s:SetNamedColor('#ffA500', 'orange')$/;"	v
+i	vim/.vim/after/syntax/css.vim	/^   let i = s:SetNamedColor('#ffff00', 'yellow')$/;"	v
+i	vim/.vim/after/syntax/css.vim	/^   let i = s:SetNamedColor('#ffffff', 'white')$/;"	v
+infer_properties	vim/.vim/autoload/plug.vim	/^function! s:infer_properties(name, repo)$/;"	f
+init	vim/.vim/plugin/delimitMate.vim	/^function! s:init() "{{{$/;"	f
+install	vim/.vim/autoload/plug.vim	/^function! s:install(force, names)$/;"	f
+is_local_plug	vim/.vim/autoload/plug.vim	/^  function! s:is_local_plug(repo)$/;"	f
+is_managed	vim/.vim/autoload/plug.vim	/^function! s:is_managed(name)$/;"	f
+is_preview_window_open	vim/.vim/autoload/plug.vim	/^function! s:is_preview_window_open()$/;"	f
+is_updated	vim/.vim/autoload/plug.vim	/^function! s:is_updated(dir)$/;"	f
+job_abort	vim/.vim/autoload/plug.vim	/^function! s:job_abort()$/;"	f
+job_cb	vim/.vim/autoload/plug.vim	/^function! s:job_cb(fn, job, ch, data)$/;"	f
+job_exit_cb	vim/.vim/autoload/plug.vim	/^function! s:job_exit_cb(self, data) abort$/;"	f
+job_out_cb	vim/.vim/autoload/plug.vim	/^function! s:job_out_cb(self, data) abort$/;"	f
+json	sauce/getsymbol.py	/^import json$/;"	i
+json	sauce/prepsauce.py	/^import json$/;"	i
+last_non_empty_line	vim/.vim/autoload/plug.vim	/^function! s:last_non_empty_line(lines)$/;"	f
+lastline	vim/.vim/autoload/plug.vim	/^function! s:lastline(msg)$/;"	f
+lines	vim/.vim/autoload/plug.vim	/^function! s:lines(msg)$/;"	f
+load_plugin	vim/.vim/autoload/plug.vim	/^function! s:load_plugin(spec)$/;"	f
+loaded_names	vim/.vim/autoload/plug.vim	/^function! s:loaded_names()$/;"	f
+lod	vim/.vim/autoload/plug.vim	/^function! s:lod(names, types, ...)$/;"	f
+lod_cmd	vim/.vim/autoload/plug.vim	/^function! s:lod_cmd(cmd, bang, l1, l2, args, names)$/;"	f
+lod_ft	vim/.vim/autoload/plug.vim	/^function! s:lod_ft(pat, names)$/;"	f
+lod_map	vim/.vim/autoload/plug.vim	/^function! s:lod_map(map, names, with_prefix, prefix)$/;"	f
+log	vim/.vim/autoload/plug.vim	/^function! s:log(bullet, name, lines)$/;"	f
+log4	vim/.vim/autoload/plug.vim	/^function! s:log4(name, msg)$/;"	f
+logpos	vim/.vim/autoload/plug.vim	/^function! s:logpos(name)$/;"	f
+lpad	vim/.vim/autoload/plug.vim	/^function! s:lpad(str, len)$/;"	f
+main	sauce/sauce-decorators/scripts/os-decorators.sh	/^main(){$/;"	f
+main	sauce/sauce-decorators/scripts/window-decorators.sh	/^main() {$/;"	f
+main	sauce/tmux/battery_status_fg.sh	/^main() {$/;"	f
+names	vim/.vim/autoload/plug.vim	/^function! s:names(...)$/;"	f
+new_window	vim/.vim/autoload/plug.vim	/^function! s:new_window()$/;"	f
+nvim_cb	vim/.vim/autoload/plug.vim	/^function! s:nvim_cb(job_id, data, event) dict abort$/;"	f
+option_init	vim/.vim/plugin/delimitMate.vim	/^function! s:option_init(name, default) "{{{$/;"	f
+os	sauce/getsymbol.py	/^import os$/;"	i
+os	sauce/prepsauce.py	/^import os$/;"	i
+p	sauce/getsymbol.py	/^p = os.path.join(os.path.dirname(os.path.realpath(__file__)), "theme.json")$/;"	v
+parse_options	vim/.vim/autoload/plug.vim	/^function! s:parse_options(arg)$/;"	f
+path	vim/.vim/autoload/plug.vim	/^  function! s:path(path)$/;"	f
+plug#	vim/.vim/autoload/plug.vim	/^function! plug#(repo, ...)$/;"	f
+plug#begin	vim/.vim/autoload/plug.vim	/^function! plug#begin(...)$/;"	f
+plug#end	vim/.vim/autoload/plug.vim	/^function! plug#end()$/;"	f
+plug#helptags	vim/.vim/autoload/plug.vim	/^function! plug#helptags()$/;"	f
+plug#load	vim/.vim/autoload/plug.vim	/^function! plug#load(...)$/;"	f
+plug_window_exists	vim/.vim/autoload/plug.vim	/^function! s:plug_window_exists()$/;"	f
+pow	vim/.vim/after/syntax/css.vim	/^function! s:pow(x, n)$/;"	f
+prepare	vim/.vim/autoload/plug.vim	/^function! s:prepare(...)$/;"	f
+preview_commit	vim/.vim/autoload/plug.vim	/^function! s:preview_commit()$/;"	f
+print_battery_status_bg	sauce/tmux/battery_status_fg.sh	/^print_battery_status_bg() {$/;"	f
+progress_bar	vim/.vim/autoload/plug.vim	/^function! s:progress_bar(line, bar, total)$/;"	f
+progress_opt	vim/.vim/autoload/plug.vim	/^function! s:progress_opt(base)$/;"	f
+reap	vim/.vim/autoload/plug.vim	/^function! s:reap(name)$/;"	f
+regress_bar	vim/.vim/autoload/plug.vim	/^function! s:regress_bar()$/;"	f
+reload_plugins	vim/.vim/autoload/plug.vim	/^function! s:reload_plugins()$/;"	f
+remove_rtp	vim/.vim/autoload/plug.vim	/^function! s:remove_rtp()$/;"	f
+remove_triggers	vim/.vim/autoload/plug.vim	/^function! s:remove_triggers(name)$/;"	f
+reorg_rtp	vim/.vim/autoload/plug.vim	/^function! s:reorg_rtp()$/;"	f
+retry	vim/.vim/autoload/plug.vim	/^function! s:retry()$/;"	f
+revert	vim/.vim/autoload/plug.vim	/^function! s:revert()$/;"	f
+rm_rf	vim/.vim/autoload/plug.vim	/^function! s:rm_rf(dir)$/;"	f
+rtp	vim/.vim/autoload/plug.vim	/^  function! s:rtp(spec)$/;"	f
+s	vim/.vim/autoload/delimitMate.vim	/^function! s:s(name, value, ...) "{{{$/;"	f
+s	vim/.vim/plugin/delimitMate.vim	/^function! s:s(...) " {{{$/;"	f
+s:I1	themes/hightechbanana/airline/hightechbanana.vim	/^let s:I1 = [ '#1793d1' , '#1e1e1e' , 45 , 234 ]$/;"	v
+s:I2	themes/hightechbanana/airline/hightechbanana.vim	/^let s:I2 = [ '#1793d1' , '#1e1e1e' , 45 , 234 ]$/;"	v
+s:I3	themes/hightechbanana/airline/hightechbanana.vim	/^let s:I3 = [ '#1793d1' , '#1e1e1e' , 45 , 234 ]$/;"	v
+s:IA	themes/hightechbanana/airline/hightechbanana.vim	/^let s:IA = [ '#5e5e5e' , '#222222' , 59 , 234 , '' ]$/;"	v
+s:N1	themes/hightechbanana/airline/hightechbanana.vim	/^let s:N1 = [ '#5c6370' , '#1e1e1e' , 243 , 234 ]$/;"	v
+s:N2	themes/hightechbanana/airline/hightechbanana.vim	/^let s:N2 = [ '#5c6370' , '#1e1e1e' , 243 , 234 ]$/;"	v
+s:N3	themes/hightechbanana/airline/hightechbanana.vim	/^let s:N3 = [ '#5c6370' , '#1e1e1e' , 243 , 234 ]$/;"	v
+s:TYPE	vim/.vim/autoload/plug.vim	/^let s:TYPE = {$/;"	v
+s:V1	themes/hightechbanana/airline/hightechbanana.vim	/^let s:V1 = [ '#ffd75f' , '#1e1e1e' , 220 , 234 ]$/;"	v
+s:V2	themes/hightechbanana/airline/hightechbanana.vim	/^let s:V2 = [ '#ffd75f' , '#1e1e1e' , 220 , 234 ]$/;"	v
+s:V3	themes/hightechbanana/airline/hightechbanana.vim	/^let s:V3 = [ '#ffd75f' , '#1e1e1e' , 220 , 234 ]$/;"	v
+s:WI	themes/hightechbanana/airline/hightechbanana.vim	/^let s:WI = [ '#f2267f', '#1e1e1e', 196, 234 ]$/;"	v
+s:actual_white	vim/.vim/colors/challenger_deep.vim	/^let s:actual_white    = { "gui": "#FFFFFF", "cterm": "231", "cterm16" : "231" }$/;"	v
+s:asphalt	vim/.vim/colors/challenger_deep.vim	/^let s:asphalt = { "gui": "#1e1c31", "cterm": "233", "cterm16": "NONE"}$/;"	v
+s:asphalt_subtle	vim/.vim/colors/challenger_deep.vim	/^let s:asphalt_subtle= { "gui": "#100E23", "cterm": "232", "cterm16": "8"}$/;"	v
+s:b	vim/.vim/after/syntax/css.vim	/^      let s:b = strridx(s:olddef,'matchgroup')$/;"	v
+s:base_spec	vim/.vim/autoload/plug.vim	/^let s:base_spec = { 'branch': 'master', 'frozen': 0 }$/;"	v
+s:basic16	vim/.vim/after/syntax/css.vim	/^let s:basic16 = [ [ 0x00, 0x00, 0x00 ], [ 0xCD, 0x00, 0x00 ], [ 0x00, 0xCD, 0x00 ], [ 0xCD, 0xCD, 0x00 ], [ 0x00, 0x00, 0xEE ], [ 0xCD, 0x00, 0xCD ], [ 0x00, 0xCD, 0xCD ], [ 0xE5, 0xE5, 0xE5 ], [ 0x7F, 0x7F, 0x7F ], [ 0xFF, 0x00, 0x00 ], [ 0x00, 0xFF, 0x00 ], [ 0xFF, 0xFF, 0x00 ], [ 0x5C, 0x5C, 0xFF ], [ 0xFF, 0x00, 0xFF ], [ 0x00, 0xFF, 0xFF ], [ 0xFF, 0xFF, 0xFF ] ]$/;"	v
+s:bg	vim/.vim/colors/challenger_deep.vim	/^let s:bg              = s:asphalt$/;"	v
+s:bg_dark	vim/.vim/colors/challenger_deep.vim	/^let s:bg_dark         = s:dark_asphalt$/;"	v
+s:bg_subtle	vim/.vim/colors/challenger_deep.vim	/^let s:bg_subtle       = s:asphalt_subtle$/;"	v
+s:black	vim/.vim/colors/challenger_deep.vim	/^let s:black           = { "gui": "#212121", "cterm": "0", "cterm16" : "0" }$/;"	v
+s:blue	vim/.vim/colors/challenger_deep.vim	/^let s:blue = { "gui": "#91ddff", "cterm": "159", "cterm16": "4"}$/;"	v
+s:clouds	vim/.vim/colors/challenger_deep.vim	/^let s:clouds = { "gui": "#cbe3e7", "cterm": "253", "cterm16": "7"}$/;"	v
+s:colortable	vim/.vim/after/syntax/css.vim	/^let s:colortable=[]$/;"	v
+s:cpo_save	vim/.vim/autoload/plug.vim	/^let s:cpo_save = &cpo$/;"	v
+s:cterm	vim/.vim/colors/material.vim	/^let s:cterm = {}$/;"	v
+s:cyan	vim/.vim/colors/challenger_deep.vim	/^let s:cyan = { "gui": "#aaffe4", "cterm": "122", "cterm16": "6"}$/;"	v
+s:dark_asphalt	vim/.vim/colors/challenger_deep.vim	/^let s:dark_asphalt = { "gui": "#565575", "cterm": "236", "cterm16": "0"}$/;"	v
+s:dark_blue	vim/.vim/colors/challenger_deep.vim	/^let s:dark_blue = { "gui": "#65b2ff", "cterm": "75", "cterm16": "12"}$/;"	v
+s:dark_clouds	vim/.vim/colors/challenger_deep.vim	/^let s:dark_clouds = { "gui": "#a6b3cc", "cterm": "252", "cterm16": "15"}$/;"	v
+s:dark_cyan	vim/.vim/colors/challenger_deep.vim	/^let s:dark_cyan = { "gui": "#63f2f1", "cterm": "121", "cterm16": "14"}$/;"	v
+s:dark_green	vim/.vim/colors/challenger_deep.vim	/^let s:dark_green = { "gui": "#62d196", "cterm": "119", "cterm16": "10"}$/;"	v
+s:dark_purple	vim/.vim/colors/challenger_deep.vim	/^let s:dark_purple = { "gui": "#906cff", "cterm": "135", "cterm16": "13"}$/;"	v
+s:dark_red	vim/.vim/colors/challenger_deep.vim	/^let s:dark_red = { "gui": "#ff5458", "cterm": "203", "cterm16": "9"}$/;"	v
+s:dark_yellow	vim/.vim/colors/challenger_deep.vim	/^let s:dark_yellow = { "gui": "#ffb378", "cterm": "215", "cterm16": "11"}$/;"	v
+s:first_rtp	vim/.vim/autoload/plug.vim	/^let s:first_rtp = s:escrtp(get(s:split_rtp(), 0, ''))$/;"	v
+s:green	vim/.vim/colors/challenger_deep.vim	/^let s:green = { "gui": "#95ffa4", "cterm": "120", "cterm16": "2"}$/;"	v
+s:gui	vim/.vim/colors/material.vim	/^let s:gui = {}$/;"	v
+s:gui	vim/.vim/colors/material.vim	/^let s:gui.background = { 'dark': '#263238', 'light': '#E4E4E4' }$/;"	v
+s:gui	vim/.vim/colors/material.vim	/^let s:gui.blue         = { 'dark': '#82AAFF', 'light': '#6182B8' }$/;"	v
+s:gui	vim/.vim/colors/material.vim	/^let s:gui.brown        = { 'dark': '#AB7967', 'light': '#AB7967' }$/;"	v
+s:gui	vim/.vim/colors/material.vim	/^let s:gui.comment    = { 'dark': '#5D818E', 'light': '#5F5F5F' }$/;"	v
+s:gui	vim/.vim/colors/material.vim	/^let s:gui.cyan         = { 'dark': '#89DDFF', 'light': '#39ADB5' }$/;"	v
+s:gui	vim/.vim/colors/material.vim	/^let s:gui.dark_red     = { 'dark': '#B71C1C', 'light': '#E53935' }$/;"	v
+s:gui	vim/.vim/colors/material.vim	/^let s:gui.foreground = { 'dark': '#EEFFFF', 'light': '#000000' }$/;"	v
+s:gui	vim/.vim/colors/material.vim	/^let s:gui.green        = { 'dark': '#C3E88D', 'light': '#91B859' }$/;"	v
+s:gui	vim/.vim/colors/material.vim	/^let s:gui.lighter_teal = { 'dark': '#00897B', 'light': '#91B859' }$/;"	v
+s:gui	vim/.vim/colors/material.vim	/^let s:gui.line       = { 'dark': '#212121', 'light': '#D0D0D0' }$/;"	v
+s:gui	vim/.vim/colors/material.vim	/^let s:gui.none       = { 'dark': 'NONE', 'light': 'NONE' }$/;"	v
+s:gui	vim/.vim/colors/material.vim	/^let s:gui.orange       = { 'dark': '#F78C6C', 'light': '#F76D47' }$/;"	v
+s:gui	vim/.vim/colors/material.vim	/^let s:gui.pale_blue    = { 'dark': '#B2CCD6', 'light': '#8796B0' }$/;"	v
+s:gui	vim/.vim/colors/material.vim	/^let s:gui.pink         = { 'dark': '#F07178', 'light': '#FF5370' }$/;"	v
+s:gui	vim/.vim/colors/material.vim	/^let s:gui.purple       = { 'dark': '#C792EA', 'light': '#7C4DFF' }$/;"	v
+s:gui	vim/.vim/colors/material.vim	/^let s:gui.red          = { 'dark': '#FF5370', 'light': '#E53935' }$/;"	v
+s:gui	vim/.vim/colors/material.vim	/^let s:gui.selection  = { 'dark': '#455A64', 'light': '#BCBCBC' }$/;"	v
+s:gui	vim/.vim/colors/material.vim	/^let s:gui.teal         = { 'dark': '#004D40', 'light': '#91B859' }$/;"	v
+s:gui	vim/.vim/colors/material.vim	/^let s:gui.violet       = { 'dark': '#BB80B3', 'light': '#945EB8' }$/;"	v
+s:gui	vim/.vim/colors/material.vim	/^let s:gui.yellow       = { 'dark': '#FFCB6B', 'light': '#FFB62C' }$/;"	v
+s:head_a	vim/.vim/colors/challenger_deep.vim	/^let s:head_a         = s:dark_blue$/;"	v
+s:head_b	vim/.vim/colors/challenger_deep.vim	/^let s:head_b         = s:blue$/;"	v
+s:head_c	vim/.vim/colors/challenger_deep.vim	/^let s:head_c         = s:dark_cyan$/;"	v
+s:is_win	vim/.vim/autoload/plug.vim	/^let s:is_win = has('win32') || has('win64')$/;"	v
+s:last_rtp	vim/.vim/autoload/plug.vim	/^let s:last_rtp  = s:escrtp(get(s:split_rtp(), -1, ''))$/;"	v
+s:light_black	vim/.vim/colors/challenger_deep.vim	/^let s:light_black     = { "gui": "#424242", "cterm": "8", "cterm16" : "8" }$/;"	v
+s:light_gray	vim/.vim/colors/challenger_deep.vim	/^let s:light_gray    = { "gui": "#B2B2B2", "cterm": "249", "cterm16" : "249" }$/;"	v
+s:lighter_black	vim/.vim/colors/challenger_deep.vim	/^let s:lighter_black   = { "gui": "#545454", "cterm": "240", "cterm16" : "240" }$/;"	v
+s:lighter_gray	vim/.vim/colors/challenger_deep.vim	/^let s:lighter_gray  = { "gui": "#C6C6C6", "cterm": "251", "cterm16" : "251" }$/;"	v
+s:loaded	vim/.vim/autoload/plug.vim	/^let s:loaded = get(s:, 'loaded', {})$/;"	v
+s:loaded_delimitMate	vim/.vim/plugin/delimitMate.vim	/^let s:loaded_delimitMate = 1$/;"	v
+s:mac_gui	vim/.vim/autoload/plug.vim	/^let s:mac_gui = has('gui_macvim') && has('gui_running')$/;"	v
+s:me	vim/.vim/autoload/plug.vim	/^let s:me = resolve(expand('<sfile>:p'))$/;"	v
+s:medium_gray	vim/.vim/colors/challenger_deep.vim	/^let s:medium_gray     = { "gui": "#767676", "cterm": "243", "cterm16" : "243" }$/;"	v
+s:norm	vim/.vim/colors/challenger_deep.vim	/^let s:norm            = s:clouds$/;"	v
+s:norm_subtle	vim/.vim/colors/challenger_deep.vim	/^let s:norm_subtle     = s:dark_clouds$/;"	v
+s:nvim	vim/.vim/autoload/plug.vim	/^let s:nvim = has('nvim-0.2') || (has('nvim') && exists('*jobwait') && !s:is_win)$/;"	v
+s:options	vim/.vim/autoload/delimitMate.vim	/^	let s:options = {}$/;"	v
+s:plug_buf	vim/.vim/autoload/plug.vim	/^let s:plug_buf = get(s:, 'plug_buf', -1)$/;"	v
+s:plug_src	vim/.vim/autoload/plug.vim	/^let s:plug_src = 'https:\/\/github.com\/junegunn\/vim-plug.git'$/;"	v
+s:plug_tab	vim/.vim/autoload/plug.vim	/^let s:plug_tab = get(s:, 'plug_tab', -1)$/;"	v
+s:purple	vim/.vim/colors/challenger_deep.vim	/^let s:purple = { "gui": "#c991e1", "cterm": "141", "cterm16": "5"}$/;"	v
+s:red	vim/.vim/colors/challenger_deep.vim	/^let s:red = { "gui": "#ff8080", "cterm": "204", "cterm16": "1"}$/;"	v
+s:subtle_black	vim/.vim/colors/challenger_deep.vim	/^let s:subtle_black  = { "gui": "#303030", "cterm": "236", "cterm16" : "236" }$/;"	v
+s:triggers	vim/.vim/autoload/plug.vim	/^let s:triggers = get(s:, 'triggers', {})$/;"	v
+s:valuerange	vim/.vim/after/syntax/css.vim	/^let s:valuerange = [ 0x00, 0x5F, 0x87, 0xAF, 0xD7, 0xFF ]$/;"	v
+s:vim8	vim/.vim/autoload/plug.vim	/^let s:vim8 = has('patch-8.0.0039') && exists('*job_start')$/;"	v
+s:visual	vim/.vim/colors/challenger_deep.vim	/^let s:visual          = s:bg_dark$/;"	v
+s:white	vim/.vim/colors/challenger_deep.vim	/^let s:white           = { "gui": "#F3F3F3", "cterm": "15", "cterm16" : "15" }$/;"	v
+s:yellow	vim/.vim/colors/challenger_deep.vim	/^let s:yellow = { "gui": "#ffe9aa", "cterm": "228", "cterm16": "3"}$/;"	v
+saucePath	sauce/prepsauce.py	/^    saucePath = os.path.join(home, ".colorSauce")$/;"	v
+save_cpo	vim/.vim/plugin/delimitMate.vim	/^let save_cpo = &cpo$/;"	v
+section	vim/.vim/autoload/plug.vim	/^function! s:section(flags)$/;"	f
+set	sauce/.sauceTmux	/^set() {$/;"	f
+setw	sauce/.sauceTmux	/^setw() {$/;"	f
+shellesc	vim/.vim/autoload/plug.vim	/^function! s:shellesc(arg)$/;"	f
+shellesc_cmd	vim/.vim/autoload/plug.vim	/^function! s:shellesc_cmd(arg)$/;"	f
+snapshot	vim/.vim/autoload/plug.vim	/^function! s:snapshot(force, ...) abort$/;"	f
+source	vim/.vim/autoload/plug.vim	/^function! s:source(from, ...)$/;"	f
+spawn	vim/.vim/autoload/plug.vim	/^function! s:spawn(name, cmd, opts)$/;"	f
+split_rtp	vim/.vim/autoload/plug.vim	/^function! s:split_rtp()$/;"	f
+status	vim/.vim/autoload/plug.vim	/^function! s:status()$/;"	f
+status_load	vim/.vim/autoload/plug.vim	/^function! s:status_load(lnum)$/;"	f
+status_update	vim/.vim/autoload/plug.vim	/^function! s:status_update() range$/;"	f
+switch_in	vim/.vim/autoload/plug.vim	/^function! s:switch_in()$/;"	f
+switch_out	vim/.vim/autoload/plug.vim	/^function! s:switch_out(...)$/;"	f
+symdict	sauce/getsymbol.py	/^symdict = {$/;"	v
+syntax	vim/.vim/autoload/plug.vim	/^function! s:syntax()$/;"	f
+sys	sauce/prepsauce.py	/^import sys$/;"	i
+system	vim/.vim/autoload/plug.vim	/^function! s:system(cmd, ...)$/;"	f
+system_chomp	vim/.vim/autoload/plug.vim	/^function! s:system_chomp(...)$/;"	f
+theme	sauce/prepsauce.py	/^    theme = os.path.join(home, ".dotfiles\/sauce\/theme.json")$/;"	v
+tick	vim/.vim/autoload/plug.vim	/^function! s:tick()$/;"	f
+toHex	sauce/prepsauce.py	/^def toHex():$/;"	f
+to_a	vim/.vim/autoload/plug.vim	/^function! s:to_a(v)$/;"	f
+to_s	vim/.vim/autoload/plug.vim	/^function! s:to_s(v)$/;"	f
+trim	vim/.vim/autoload/plug.vim	/^function! s:trim(str)$/;"	f
+update	vim/.vim/autoload/plug.vim	/^function! s:update(force, names)$/;"	f
+update_finish	vim/.vim/autoload/plug.vim	/^function! s:update_finish()$/;"	f
+update_impl	vim/.vim/autoload/plug.vim	/^function! s:update_impl(pull, force, args) abort$/;"	f
+update_python	vim/.vim/autoload/plug.vim	/^function! s:update_python()$/;"	f
+update_ruby	vim/.vim/autoload/plug.vim	/^function! s:update_ruby()$/;"	f
+update_vim	vim/.vim/autoload/plug.vim	/^function! s:update_vim()$/;"	f
+upgrade	vim/.vim/autoload/plug.vim	/^function! s:upgrade()$/;"	f
+upgrade_specs	vim/.vim/autoload/plug.vim	/^function! s:upgrade_specs()$/;"	f
+version_requirement	vim/.vim/autoload/plug.vim	/^function! s:version_requirement(val, min)$/;"	f
+warn	vim/.vim/autoload/plug.vim	/^function! s:warn(cmd, msg)$/;"	f
+which_os	sauce/sauce-decorators/scripts/helpers.sh	/^which_os() {$/;"	f
+which_window	sauce/sauce-decorators/scripts/helpers.sh	/^which_window() {$/;"	f
+with_cd	vim/.vim/autoload/plug.vim	/^function! s:with_cd(cmd, dir)$/;"	f
+xml	sauce/prepsauce.py	/^import xml.etree.ElementTree as ET$/;"	i

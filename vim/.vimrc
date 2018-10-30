@@ -16,12 +16,14 @@ call vundle#begin()
 	Plugin 'gabrielelana/vim-markdown'
 	Plugin 'git://git.wincent.com/command-t.git'
 	Plugin 'majutsushi/tagbar'
+	Plugin 'ludovicchabant/vim-gutentags'
 	Plugin 'mhinz/vim-startify'
 	Plugin 'othree/html5.vim'
 	Plugin 'pangloss/vim-javascript'
 	Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
 	Plugin 'scrooloose/nerdtree'
 	Plugin 'scrooloose/syntastic'
+	Plugin 'tpope/vim-rhubarb'
 	Plugin 'tpope/vim-surround'
 	Plugin 'tpope/vim-fugitive'
 	Plugin 'valloric/youcompleteme'
@@ -136,5 +138,8 @@ endif
 set so=6
 set foldmethod=indent
 set foldlevel=99
+let g:github_enterprise_urls = ['http://git.baltic-online.de']
+let g:fugitive_gitlab_domains = ['https://git.baltic-online.de']
 
+let g:airline#extensions#tabline#buffer_min_count =2
 let g:startify_custom_header = []
