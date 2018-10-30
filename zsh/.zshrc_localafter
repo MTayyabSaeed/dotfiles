@@ -1,8 +1,7 @@
 
 function clipToVim {
 	t=$HOME/.clipboard
-	pbpaste >! $t
-	vim $t
+	vim -c ".!pbpaste" "$t"
 }
 
 bindkey -s "^]" "clipToVim ^M"
