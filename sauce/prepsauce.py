@@ -56,4 +56,3 @@ if __name__ == "__main__":
     saucePath = os.path.join(home, ".colorSauce")
     with open(saucePath, "w") as f:
         f.write("\n".join([f"{k}='{v}'" for k, v in d.items()]))
-

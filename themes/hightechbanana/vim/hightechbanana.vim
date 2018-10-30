@@ -7,9 +7,10 @@ if version > 580
 endif
 
 set t_Co=256
-let g:colors_name = "2357flat"
+let g:colors_name = "hightechbanana"
 
 hi Cursor guifg=#262626 guibg=#d7ffff guisp=#d7ffff gui=NONE ctermfg=235 ctermbg=195 cterm=NONE
+hi CursorLineNr   term=bold ctermfg=NONE gui=bold guifg=#71c671
 hi Ignore guifg=#60666b guibg=NONE guisp=NONE gui=NONE ctermfg=242 ctermbg=NONE cterm=NONE
 hi VertSplit guifg=#444444 guibg=#444444 guisp=#444444 gui=NONE ctermfg=238 ctermbg=238 cterm=NONE
 hi NonText guifg=#949494 guibg=NONE guisp=NONE gui=NONE ctermfg=246 ctermbg=NONE cterm=NONE
@@ -86,12 +87,12 @@ hi Search guifg=#16191c guibg=#fffebe guisp=#fffebe gui=NONE ctermfg=234 ctermbg
 hi Delimiter guifg=#f8f8f8 guibg=NONE guisp=NONE gui=NONE ctermfg=15 ctermbg=NONE cterm=NONE
 "hi SpellRare -- no settings --
 "hi EnumerationValue -- no settings --
-hi TabLineSel guifg=#c9cacb guibg=#1c1c1c guisp=#1c1c1c gui=bold ctermfg=252 ctermbg=234 cterm=bold
+hi TabLineSel guifg=#ffd75f guibg=#1c1c1c guisp=#1c1c1c gui=bold ctermfg=252 ctermbg=234 cterm=bold
 hi Operator guifg=#1794d1 guibg=NONE guisp=NONE gui=NONE ctermfg=220 ctermbg=NONE cterm=NONE
 hi CursorLine guifg=NONE guibg=#2d3033 guisp=#2d3033 gui=NONE ctermfg=NONE ctermbg=236 cterm=NONE
 hi ColorColumn guifg=NONE guibg=#3b3e40 guisp=#3b3e40 gui=NONE ctermfg=NONE ctermbg=238 cterm=NONE
 "hi Union -- no settings --
-hi TabLineFill guifg=#e2e4e5 guibg=#212325 guisp=#212325 gui=NONE ctermfg=254 ctermbg=235 cterm=NONE
+hi TabLineFill guifg=NONE guibg=NONE guisp=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
 hi Question guifg=#a0a0a0 guibg=#26292c guisp=#26292c gui=NONE ctermfg=247 ctermbg=236 cterm=NONE
 hi WarningMsg guifg=#f8f8f8 guibg=#aa2915 guisp=#aa2915 gui=NONE ctermfg=15 ctermbg=124 cterm=NONE
 hi VisualNOS guifg=NONE guibg=#414549 guisp=#414549 gui=NONE ctermfg=NONE ctermbg=239 cterm=NONE
@@ -121,7 +122,7 @@ hi MatchParen guifg=#f2267f guibg=#fa9a4b guisp=#fa9a4b gui=underline ctermfg=23
 hi Structure guifg=#72aaca guibg=NONE guisp=NONE gui=NONE ctermfg=110 ctermbg=NONE cterm=NONE
 hi Underlined guifg=NONE guibg=NONE guisp=NONE gui=underline ctermfg=NONE ctermbg=NONE cterm=underline
 hi DiffAdd guifg=#f8f8f8 guibg=#487a1a guisp=#487a1a gui=bold ctermfg=15 ctermbg=2 cterm=bold
-hi TabLine guifg=#797a7b guibg=#212325 guisp=#212325 gui=NONE ctermfg=8 ctermbg=235 cterm=NONE
+hi TabLine guifg=#8f8f8f guibg=#1e1e1e guisp=#e4e0d7 gui=NONE ctermfg=8 ctermbg=235 cterm=NONE
 
 hi IndentGuidesOdd guifg=#f6f6f6 guibg=#2f3337 guisp=#2f3337 gui=NONE ctermfg=255 ctermbg=236 cterm=NONE
 hi IndentGuidesEven guifg=#f8f8f8 guibg=#383d41 guisp=#383d41 gui=bold ctermfg=15 ctermbg=238 cterm=NONE

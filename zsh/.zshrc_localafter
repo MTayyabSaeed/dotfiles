@@ -1,0 +1,12 @@
+
+function clipToVim {
+	t=$HOME/.clipboard
+	pbpaste >! $t
+	vim $t
+}
+
+bindkey -s "^]" "clipToVim ^M"
+
+bindkey -s "^O" "clear 2>&1 ^M"
+
+bindkey '^ ' autosuggest-accept

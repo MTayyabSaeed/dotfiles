@@ -2,32 +2,10 @@ if [[ -z "$LC_ALL" ]]; then
 	export LC_ALL='en_US.UTF-8'
 fi
 
-
-# initializes the tmux-sessions
-if [[ "$TERM" =~ "screen".* ]]; then
-	if [[ ! -v INTMUX ]]; then
-		tmux new-window -t 2 -c "$HOME/repos" -n dev 2>/dev/null
-		tmux new-window -t 3 -c "$HOME/.tests" -n tests 2>/dev/null
-		tmux new-window -t 4 -n misc 2>/dev/null
-		tmux new-window -t 5 -n "bg" 2>/dev/null
-		tmux select-window -t 1
-		clear
-		source ~/.scripts/tmux-wall
-	fi
-	INTMUX=1
-fi		
-
-# this export has to remain above the tmux-initlialization
 export SAUCE="$HOME/.colorSauce"
 
 
-# instantiates the tmux-sessions
-if [ -z "$TMUX" ]; then
-	for label in float hotkey #toggler
-	do
-		tmux new -s $label -n main -d 2>/dev/null
-	done
-fi
+python3 $HOME/repos/max/tmux_init/launch.py
 
 
 function tmuxToggle(){
@@ -51,6 +29,8 @@ alias ...='cd ../..'
 alias ....='cd ../../..'
 alias ll='ls -alF'
 
+alias ctags="`brew --prefix`/bin/ctags"
+alias emacs="/usr/local/Cellar/emacs-plus/HEAD-00027ff/bin/emacs-27.0.50"
 alias vi="vim"
 alias vim="/usr/local/Cellar/vim/8.1.0450/bin/vim"
 alias sauce="source $HOME/.zshrc"
@@ -74,9 +54,13 @@ bindkey "^[[B" history-beginning-search-forward
 bindkey -M vicmd v edit-command-line
 
 
+
 # config
 autoload -U edit-command-line
 bindkey -v
+export HISTCONTROL=ignoredups:erasedups
+export PROMPT_COMMAND="history -a; history -c; history -r; $PROMPT_COMMAND"
+
 HISTFILE=~/.zsh_history
 HISTSIZE=10000
 SAVEHIST=10000

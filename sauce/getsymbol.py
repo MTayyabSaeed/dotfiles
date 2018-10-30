@@ -37,6 +37,7 @@ symdict = {
     "hireddit": "",
     "github": "",
     "other": " ",
+    "candy": ""
 
     # cur env
     #"arch": " ",
