@@ -12,11 +12,12 @@ call vundle#begin()
 	Plugin 'elzr/vim-json'
 	Plugin 'ervandew/supertab'
 	Plugin 'flazz/vim-colorschemes'
+	Plugin 'kien/ctrlp.vim'
 	Plugin 'Konfekt/FastFold'
 	Plugin 'gabrielelana/vim-markdown'
 	Plugin 'git://git.wincent.com/command-t.git'
-	Plugin 'majutsushi/tagbar'
 	Plugin 'ludovicchabant/vim-gutentags'
+	Plugin 'majutsushi/tagbar'
 	Plugin 'mhinz/vim-startify'
 	Plugin 'othree/html5.vim'
 	Plugin 'pangloss/vim-javascript'
@@ -41,7 +42,8 @@ call vundle#end()
 
 map <C-n> :NERDTreeToggle<CR>
 autocmd BufWinEnter * NERDTreeMirror
-autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree")
+			\ && b:NERDTree.isTabTree()) | q | endif
 autocmd VimEnter *
 	\   if !argc()
 	\ | 	Startify
@@ -52,6 +54,8 @@ autocmd VimEnter *
 set directory=~/.cache/vim/swapfiles
 set undodir=~/.vim/undo-dir
 set undofile
+set columns=80
+set colorcolumn=80
 
 nnoremap <C-X> :wqa!<cr>
 noremap <tj> :tabn<cr>
@@ -103,7 +107,8 @@ hi SpellBad ctermfg=NONE ctermbg=NONE guifg=NONE guibg=NONE cterm=undercurl
 hi SpellCap ctermfg=NONE ctermbg=NONE guifg=NONE guibg=NONE cterm=undercurl
 
 hi SignColumn ctermbg=NONE guibg=NONE
-:command! -complete=file -nargs=1 Rpdf :r !pdftotext -nopgbrk <q-args> - |fmt -csw78
+:command! -complete=file -nargs=1 Rpdf :r
+			\ !pdftotext -nopgbrk <q-args> - |fmt -csw78
 
 function! ToggleRelativeNumber()
   if &relativenumber
@@ -134,7 +139,8 @@ nnoremap <silent> {Up-Mapping} :TmuxNavigateUp<cr>
 nnoremap <silent> {Right-Mapping} :TmuxNavigateRight<cr>
 nnoremap <silent> {Previous-Mapping} :TmuxNavigatePrevious<cr>
 if has("autocmd")
-  au BufReadPost * if line("'\"") > 0 && line("'\"") <= line("$") | exe "normal! g`\"" | endif
+  au BufReadPost * if line("'\"") > 0 && line("'\"") 
+			  \ <= line("$") | exe "normal! g`\"" | endif
 endif
 set so=6
 set foldmethod=indent
