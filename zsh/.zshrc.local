@@ -12,7 +12,7 @@ python3 $HOME/repos/max/tmux_init/launch.py
 
 # starts vim with current clipboard as buffer
 function clipToVim {
-	t=$HOME/.clipboard
+	t=$HOME/things/tmp/.clipboard
 	echo >! "$t"
 	vim -c "set confirm" -c "set hidden" -c ".!pbpaste" "$t"
 }
