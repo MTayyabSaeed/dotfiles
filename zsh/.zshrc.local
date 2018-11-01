@@ -7,7 +7,7 @@ export SAUCE="$HOME/.colorSauce"
 
 
 # starts the tmux-sessions with configured params
-python3 $HOME/repos/max/tmux_init/launch.py
+python3 $HOME/.dotfiles/tmux/launch.py
 
 
 # starts vim with current clipboard as buffer

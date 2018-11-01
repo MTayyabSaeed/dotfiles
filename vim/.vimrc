@@ -1,161 +1,249 @@
-set nocompatible
-filetype off
-
+" auto-indent
 set autoindent
 
+" make backspace behave as it does in other editors
+set backspace=indent,eol,start
+
+" use sys-clipboard
+set clipboard=unnamed
+
+" highlight cur line of cursor
+set cursorline
+
+" save swapfiles there
+set directory=~/.cache/vim/swapfiles
+
+" default encoding
+set encoding=utf8
+
+" unfold all folds per default
+set foldlevel=99
+
+" each level of indentation is handled as a new fold
+set foldmethod=indent
+
+" use - as keyword (moves cursor to bar when pressing w on foo in foo_bar)
+set iskeyword-=_
+
+" dont permanently redraw (performance)
+set lazyredraw
+
+" rquired by vundle
+set nocompatible
+
+" relnr as default
+set number relativenumber
+
+" append vundle to runtimepath
 set rtp+=~/.vim/bundle/Vundle.vim
 
+" indent by this when using << or >>
+set shiftwidth=4
+
+" scrolloff: show these many lines between cur and top/bottom
+set so=6
+
+" sp to bottom
+set splitbelow
+
+" vsp to right
+set splitright
+
+" 256colors
+set t_Co=256
+
+" one tab equals these many spaces
+set tabstop=4
+
+" truecolor
+set termguicolors
+
+" save change-hist per file to this dir
+set undodir=~/.vim/undo-dir
+
+" save change-hist per file
+set undofile
+
+
 call vundle#begin()
-	Plugin 'akiomik/itermcolors-vim'
-	Plugin 'chrisbra/Colorizer'
-	Plugin 'christoomey/vim-tmux-navigator'
-	Plugin 'elzr/vim-json'
-	Plugin 'ervandew/supertab'
-	Plugin 'flazz/vim-colorschemes'
-	Plugin 'kien/ctrlp.vim'
-	Plugin 'Konfekt/FastFold'
-	Plugin 'gabrielelana/vim-markdown'
-	Plugin 'git://git.wincent.com/command-t.git'
-	Plugin 'ludovicchabant/vim-gutentags'
-	Plugin 'majutsushi/tagbar'
-	Plugin 'mhinz/vim-startify'
-	Plugin 'othree/html5.vim'
-	Plugin 'pangloss/vim-javascript'
-	Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
-	Plugin 'scrooloose/nerdtree'
-	Plugin 'scrooloose/syntastic'
-	Plugin 'tpope/vim-rhubarb'
-	Plugin 'tpope/vim-surround'
-	Plugin 'tpope/vim-fugitive'
-	Plugin 'valloric/youcompleteme'
-	Plugin 'vim-airline/vim-airline'
-	Plugin 'vim-airline/vim-airline-themes'
-	Plugin 'vim-latex/vim-latex'
-	Plugin 'vim-python/python-syntax'
-	Plugin 'Vimjas/vim-python-pep8-indent'
-	Plugin 'VundleVim/Vundle.vim'
-	Plugin 'w0rp/ale'
-	Plugin 'xuhdev/vim-latex-live-preview'
-	Plugin 'Yggdroot/indentLine'
+    Plugin 'akiomik/itermcolors-vim'
+    Plugin 'chrisbra/Colorizer'
+    Plugin 'christoomey/vim-tmux-navigator'
+    Plugin 'elzr/vim-json'
+    Plugin 'ervandew/supertab'
+    Plugin 'flazz/vim-colorschemes'
+    Plugin 'gabrielelana/vim-markdown'
+    Plugin 'git://git.wincent.com/command-t.git'
+    Plugin 'kien/ctrlp.vim'
+    Plugin 'Konfekt/FastFold'
+    Plugin 'ludovicchabant/vim-gutentags'
+    Plugin 'majutsushi/tagbar'
+    Plugin 'mhinz/vim-startify'
+    Plugin 'othree/html5.vim'
+    Plugin 'pangloss/vim-javascript'
+    Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
+    Plugin 'scrooloose/nerdtree'
+    Plugin 'scrooloose/syntastic'
+    Plugin 'tpope/vim-fugitive'
+    Plugin 'tpope/vim-rhubarb'
+    Plugin 'tpope/vim-surround'
+    Plugin 'valloric/youcompleteme'
+    Plugin 'vim-airline/vim-airline'
+    Plugin 'vim-airline/vim-airline-themes'
+    Plugin 'vim-latex/vim-latex'
+    Plugin 'vim-python/python-syntax'
+    Plugin 'Vimjas/vim-python-pep8-indent'
+    Plugin 'VundleVim/Vundle.vim'
+    Plugin 'w0rp/ale'
+    Plugin 'xuhdev/vim-latex-live-preview'
+    Plugin 'Yggdroot/indentLine'
 call vundle#end()
 
 
-map <C-n> :NERDTreeToggle<CR>
+" launch NerdTree on launch
 autocmd BufWinEnter * NERDTreeMirror
+
+
+" quit if NerdTree is last buffer
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree")
-			\ && b:NERDTree.isTabTree()) | q | endif
+   \ && b:NERDTree.isTabTree()) | q | endif
+
+
+" move to correct buffer after launching w Nerdtree and Startify
 autocmd VimEnter *
-	\   if !argc()
-	\ | 	Startify
-	\ |   	NERDTree
-	\ |   	wincmd w
-	\ | endif
-
-set directory=~/.cache/vim/swapfiles
-set undodir=~/.vim/undo-dir
-set undofile
-set columns=80
-set colorcolumn=80
-
-nnoremap <C-X> :wqa!<cr>
-noremap <tj> :tabn<cr>
-noremap <tk> :tabp<cr>
-noremap <C-d> :sh<cr>
-nnoremap <leader>. :CtrlPTag<cr>
-nnoremap <leader>e :buffer NERD_tree_1<CR>
-
-filetype plugin indent on
-
-set backspace=indent,eol,start
-set clipboard=unnamed
-set encoding=utf8
-set lazyredraw
-set number relativenumber
-set shiftwidth=4
-set tabstop=4
-set cursorline
-set splitbelow
-set splitright
-set iskeyword-=_
+ \   if !argc()
+ \ |  Startify
+ \ |    NERDTree
+ \ |    wincmd w
+ \ | endif
 
 
-if has('python3')
-	silent! python3 1
-endif
+" highlight chars at index >= 80
+augroup vimrc_autocmds
+  autocmd BufEnter * highlight OverLength ctermbg=darkgrey guibg=#f2267f
+  autocmd BufEnter * match OverLength /\%80v.*/
+augroup END
 
-syntax enable
 
-let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
-let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
-
-hi clear LineNr
-hi Normal ctermbg=None
-
-set termguicolors
-
-let g:python_highlight_all = 1
-
-set t_Co=256
-
-colorscheme hightechbanana
-let g:airline_theme='hightechbanana'
-
-let g:airline_powerline_fonts=1
-let g:Powerline_symbols='unicode'
-
-hi SpellBad ctermfg=NONE ctermbg=NONE guifg=NONE guibg=NONE cterm=undercurl
-hi SpellCap ctermfg=NONE ctermbg=NONE guifg=NONE guibg=NONE cterm=undercurl
-
-hi SignColumn ctermbg=NONE guibg=NONE
-:command! -complete=file -nargs=1 Rpdf :r
-			\ !pdftotext -nopgbrk <q-args> - |fmt -csw78
-
-function! ToggleRelativeNumber()
-  if &relativenumber
-	   set norelativenumber
-  else
-	   set relativenumber
-  endif
-endfunction
-nmap ; :call ToggleRelativeNumber()<CR>
-
-let g:tmux_navigator_disable_when_zoomed = 1
-
-let g:airline#extensions#tabline#enabled = 1
-let g:airline#extensions#tabline#fnamemod = ':t'
-
-set hidden
-nmap <leader>T :enew<cr>
-nmap gt :bnext<CR>
-nmap gT :bprevious<CR>
-nmap <leader>bq :bp <BAR> bd #<CR>
-
-" Show all open buffers and their status
-nmap <leader>bl :ls<CR>
-
-nnoremap <silent> {Left-Mapping} :TmuxNavigateLeft<cr>
-nnoremap <silent> {Down-Mapping} :TmuxNavigateDown<cr>
-nnoremap <silent> {Up-Mapping} :TmuxNavigateUp<cr>
-nnoremap <silent> {Right-Mapping} :TmuxNavigateRight<cr>
-nnoremap <silent> {Previous-Mapping} :TmuxNavigatePrevious<cr>
-if has("autocmd")
-  au BufReadPost * if line("'\"") > 0 && line("'\"") 
-			  \ <= line("$") | exe "normal! g`\"" | endif
-endif
-set so=6
-set foldmethod=indent
-set foldlevel=99
-
+" toggle relnr when enterin/ leavin insert-mode
 augroup numbertoggle
   autocmd!
   autocmd BufEnter,FocusGained,InsertLeave * set relativenumber
   autocmd BufLeave,FocusLost,InsertEnter   * set norelativenumber
 augroup END
 
-let g:github_enterprise_urls = ['http://git.baltic-online.de']
-let g:fugitive_gitlab_domains = ['https://git.baltic-online.de']
+
+
+" ==mappings==
+" -modes: normal, visual, select
+" > toggle NerdTree
+map <C-n> :NERDTreeToggle<CR>
+
+" > new mappings for actual tabs (to cope with buffer-nav-bindings)
+map <tj> :tabn<cr>
+map <tk> :tabp<cr>
+
+
+" -mode: normal
+" > toggle relnr with binding
+nmap ; :call ToggleRelativeNumber()<CR>
+
+" > switch between buffers like native tab-handling
+nmap gt :bnext<CR>
+nmap gT :bprevious<CR>
+
+" > save everything and get out of here
+nmap <C-X> :wqa!<cr>
+
+" > CtrlPTag
+nmap <leader>. :CtrlPTag<cr>
+
+" > tmux-bindings
+nmap <silent> {Left-Mapping} :TmuxNavigateLeft<cr>
+nmap <silent> {Down-Mapping} :TmuxNavigateDown<cr>
+nmap <silent> {Up-Mapping} :TmuxNavigateUp<cr>
+nmap <silent> {Right-Mapping} :TmuxNavigateRight<cr>
+nmap <silent> {Previous-Mapping} :TmuxNavigatePrevious<cr>
+
+
+
+" load ftype-specific plugins and indentations
+filetype plugin indent on
+
+
+
+" toggle relnr
+function! ToggleRelativeNumber()
+  if &relativenumber
+    set norelativenumber
+  else
+    set relativenumber
+  endif
+endfunction
+
+
+
+" launch files at line of last cursor-position
+if has("autocmd")
+  au BufReadPost * if line("'\"") > 0 && line("'\"") 
+     \ <= line("$") | exe "normal! g`\"" | endif
+endif
+
+
+
+" surpress deprecation-warnings
+if has('python3')
+ silent! python3 1
+endif
+
+
+
+" highlight syntax
+syntax enable
+
+
+
+" default colorscheme
+colorscheme hightechbanana
+
+
+
+" sane colorvals, err-barcolors same as globals
+hi SpellBad ctermfg=NONE ctermbg=NONE guifg=NONE guibg=NONE cterm=undercurl
+hi SpellCap ctermfg=NONE ctermbg=NONE guifg=NONE guibg=NONE cterm=undercurl
+
+
+
+" set Vim-specific sequences for RGB colors
+let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
+let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
 
 " just show 'tabline' for buffers if more than one buffer is open
 let g:airline#extensions#tabline#buffer_min_count =2
+
+" enable tabline via airline
+let g:airline#extensions#tabline#enabled = 0
+
+" just show fname instead of full path in airline
+let g:airline#extensions#tabline#fnamemod = ':t'
+
+" enable powerline in airline
+let g:airline_powerline_fonts=1
+
+" airline-theme
+let g:airline_theme='hightechbanana'
+
+" custom git-url for fugitives Gbrowse
+let g:github_enterprise_urls = ['http://git.baltic-online.de']
+
+" required for proper powerline-rendering
+let g:Powerline_symbols='unicode'
+
+" enables all syntax-highlighting for python (see python-syntax)
+let g:python_highlight_all = 1
+
+" dont switch tmux-panes while zoomed
+let g:tmux_navigator_disable_when_zoomed = 1
+
 " no header (cowsay) in startify
 let g:startify_custom_header = []
