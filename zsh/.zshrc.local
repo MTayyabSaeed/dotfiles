@@ -2,12 +2,23 @@ if [[ -z "$LC_ALL" ]]; then
 	export LC_ALL='en_US.UTF-8'
 fi
 
+# makes colors and symbols accessible system-wide
 export SAUCE="$HOME/.colorSauce"
 
 
+# starts the tmux-sessions with configured params
 python3 $HOME/repos/max/tmux_init/launch.py
 
 
+# starts vim with current clipboard as buffer
+function clipToVim {
+	t=$HOME/.clipboard
+	echo >! "$t"
+	vim -c "set confirm" -c "set hidden" -c ".!pbpaste" "$t"
+}
+
+
+# toggle-logic between tmux-sessions 
 function tmuxToggle(){
 	tmux send-keys -t float:"bg" "tmux switch-client -t tmp" Enter
 	tmux send-keys -t hotkey:"bg" "tmux switch-client -t float" Enter
@@ -15,6 +26,7 @@ function tmuxToggle(){
 }
 
 
+# handler for the tmuxToggle
 function tt(){
 	tmux new -d -s tmp;
 	tmux send-keys -t toggler tmuxToggle Enter;
@@ -43,10 +55,18 @@ alias hidedesk="~/.scripts/hidedesk.sh"
 alias showdesk="~/.scripts/showdesk.sh"
 
 
-# bindings
+# exports
 export EDITOR=vim
 export VISUAL=vim
 
+export HISTCONTROL=ignoredups:erasedups
+
+export PROMPT_COMMAND="history -a; history -c; history -r; $PROMPT_COMMAND"
+
+
+# bindings
+bindkey '^ ' autosuggest-accept
+bindkey "^O" clear-screen
 bindkey '^[[1;9C' forward-word
 bindkey '^[[1;9D' backward-word
 bindkey "^[[A" history-beginning-search-backward
@@ -54,12 +74,9 @@ bindkey "^[[B" history-beginning-search-forward
 bindkey -M vicmd v edit-command-line
 
 
-
 # config
 autoload -U edit-command-line
 bindkey -v
-export HISTCONTROL=ignoredups:erasedups
-export PROMPT_COMMAND="history -a; history -c; history -r; $PROMPT_COMMAND"
 
 HISTFILE=~/.zsh_history
 HISTSIZE=10000
@@ -68,7 +85,6 @@ SAVEHIST=10000
 
 # path
 PATH=/usr/local/bin:$PATH
-export LANG=en_US.UTF-8
 
 
 # options
@@ -76,4 +92,3 @@ setopt AUTO_CD
 setopt correct
 
 zle -N edit-command-line
-bindkey -M vicmd v edit-command-line

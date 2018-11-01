@@ -34,8 +34,6 @@ call vundle#begin()
 	Plugin 'Vimjas/vim-python-pep8-indent'
 	Plugin 'VundleVim/Vundle.vim'
 	Plugin 'w0rp/ale'
-	Plugin 'xolox/vim-easytags'
-	Plugin 'xolox/vim-misc'
 	Plugin 'xuhdev/vim-latex-live-preview'
 	Plugin 'Yggdroot/indentLine'
 call vundle#end()
@@ -72,7 +70,10 @@ set number relativenumber
 set shiftwidth=4
 set tabstop=4
 set cursorline
+set splitbelow
 set splitright
+set iskeyword-=_
+
 
 if has('python3')
 	silent! python3 1

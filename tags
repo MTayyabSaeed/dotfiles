@@ -13,6 +13,7 @@ DelimitMateTest	vim/.vim/plugin/delimitMate.vim	/^command! -bar DelimitMateTest 
 ET	sauce/prepsauce.py	/^import xml.etree.ElementTree as ET$/;"	i
 ExtraMappings	vim/.vim/plugin/delimitMate.vim	/^function! s:ExtraMappings() "{{{$/;"	f
 FGforBG	vim/.vim/after/syntax/css.vim	/^function! s:FGforBG(bg)$/;"	f
+Figlet	tmux/launch.py	/^        from pyfiglet import Figlet$/;"	i
 Map	vim/.vim/plugin/delimitMate.vim	/^function! s:Map() "{{{$/;"	f
 NoAutoClose	vim/.vim/plugin/delimitMate.vim	/^function! s:NoAutoClose() "{{{$/;"	f
 PreviewCSSColorInLine	vim/.vim/after/syntax/css.vim	/^function! s:PreviewCSSColorInLine(where)$/;"	f
@@ -30,15 +31,18 @@ assign_name	vim/.vim/autoload/plug.vim	/^function! s:assign_name()$/;"	f
 assoc	vim/.vim/autoload/plug.vim	/^function! s:assoc(dict, key, val)$/;"	f
 bang	vim/.vim/autoload/plug.vim	/^function! s:bang(cmd, ...)$/;"	f
 bar	vim/.vim/autoload/plug.vim	/^function! s:bar()$/;"	f
+cfg	tmux/launch.py	/^    cfg = get_cfg()$/;"	v
 check_ruby	vim/.vim/autoload/plug.vim	/^function! s:check_ruby()$/;"	f
 checkout	vim/.vim/autoload/plug.vim	/^function! s:checkout(spec)$/;"	f
 chsh	vim/.vim/autoload/plug.vim	/^function! s:chsh(swap)$/;"	f
 clean	vim/.vim/autoload/plug.vim	/^function! s:clean(force)$/;"	f
 color	vim/.vim/after/syntax/css.vim	/^   let color = s:Xterm2rgb(c)$/;"	v
+colored	tmux/launch.py	/^        from termcolor import colored$/;"	i
 colors_name	vim/.vim/colors/github.vim	/^let colors_name = "github"$/;"	v
 compare_git_uri	vim/.vim/autoload/plug.vim	/^function! s:compare_git_uri(a, b)$/;"	f
 d	sauce/prepsauce.py	/^    d = fmtLabels(d)$/;"	v
 d	sauce/prepsauce.py	/^    d = toHex()$/;"	v
+d	tmux/mkd.py	/^    d = {'sessions': [{'params':$/;"	v
 define_commands	vim/.vim/autoload/plug.vim	/^function! s:define_commands()$/;"	f
 delete	vim/.vim/autoload/plug.vim	/^function! s:delete(range, force)$/;"	f
 delete_op	vim/.vim/autoload/plug.vim	/^function! s:delete_op(type, ...)$/;"	f
@@ -73,6 +77,7 @@ delimitMate#WithinEmptyMatchpair	vim/.vim/autoload/delimitMate.vim	/^function! d
 delimitMate#WithinEmptyPair	vim/.vim/autoload/delimitMate.vim	/^function! delimitMate#WithinEmptyPair() "{{{$/;"	f
 delimitMate#WithinEmptyQuotes	vim/.vim/autoload/delimitMate.vim	/^function! delimitMate#WithinEmptyQuotes() "{{{$/;"	f
 delimitMate_version	vim/.vim/plugin/delimitMate.vim	/^let delimitMate_version = "2.7"$/;"	v
+devp	tmux/mkd.py	/^    devp = os.path.join(home, "repos")$/;"	v
 diff	vim/.vim/autoload/plug.vim	/^function! s:diff()$/;"	f
 dirpath	vim/.vim/autoload/plug.vim	/^  function! s:dirpath(path)$/;"	f
 do	vim/.vim/autoload/plug.vim	/^function! s:do(pull, force, todo)$/;"	f
@@ -84,6 +89,7 @@ escrtp	vim/.vim/autoload/plug.vim	/^function! s:escrtp(path)$/;"	f
 etree	sauce/prepsauce.py	/^import xml.etree.ElementTree as ET$/;"	i
 exists	vim/.vim/autoload/delimitMate.vim	/^function! s:exists(name, ...) "{{{$/;"	f
 extract_name	vim/.vim/autoload/plug.vim	/^function! s:extract_name(str, prefix, suffix)$/;"	f
+f	tmux/mkd.py	/^    f = os.path.join(p, 'config.json')$/;"	v
 find_name	vim/.vim/autoload/plug.vim	/^function! s:find_name(lnum)$/;"	f
 finish	vim/.vim/autoload/plug.vim	/^function! s:finish(pull)$/;"	f
 finish_bindings	vim/.vim/autoload/plug.vim	/^function! s:finish_bindings()$/;"	f
@@ -182,6 +188,7 @@ g:terminal_color_9	vim/.vim/colors/artesanal.vim	/^    let g:terminal_color_9  =
 g:terminal_color_9	vim/.vim/colors/artesanal.vim	/^  let g:terminal_color_9  = '#ff9999'$/;"	v
 g:terminal_color_9	vim/.vim/colors/challenger_deep.vim	/^let g:terminal_color_9 = s:dark_red.gui$/;"	v
 get	sauce/.sauceTmux	/^get() {$/;"	f
+get_cfg	tmux/launch.py	/^def get_cfg():$/;"	f
 get_charge_color_settings	sauce/tmux/battery_status_fg.sh	/^get_charge_color_settings() {$/;"	f
 get_os_icon	sauce/sauce-decorators/scripts/os-decorators.sh	/^get_os_icon() {$/;"	f
 get_window_icon	sauce/sauce-decorators/scripts/window-decorators.sh	/^get_window_icon() {$/;"	f
@@ -194,6 +201,7 @@ h	vim/.vim/colors/challenger_deep.vim	/^function! s:h(group, style)$/;"	f
 hash_match	vim/.vim/autoload/plug.vim	/^function! s:hash_match(a, b)$/;"	f
 hi	vim/.vim/colors/material.vim	/^function! s:hi(group, guifg, guibg, ctermfg, ctermbg, attr)$/;"	f
 home	sauce/prepsauce.py	/^    home = os.path.expanduser("~")$/;"	v
+home	tmux/mkd.py	/^    home = os.path.expanduser("~")$/;"	v
 i	vim/.vim/after/syntax/css.vim	/^      let i = i+1$/;"	v
 i	vim/.vim/after/syntax/css.vim	/^   let i = 1$/;"	v
 i	vim/.vim/after/syntax/css.vim	/^   let i = s:SetNamedColor('#000000', 'black')$/;"	v
@@ -344,6 +352,7 @@ i	vim/.vim/after/syntax/css.vim	/^   let i = s:SetNamedColor('#ffA500', 'orange'
 i	vim/.vim/after/syntax/css.vim	/^   let i = s:SetNamedColor('#ffff00', 'yellow')$/;"	v
 i	vim/.vim/after/syntax/css.vim	/^   let i = s:SetNamedColor('#ffffff', 'white')$/;"	v
 infer_properties	vim/.vim/autoload/plug.vim	/^function! s:infer_properties(name, repo)$/;"	f
+init	tmux/launch.py	/^def init(server, ws, t):$/;"	f
 init	vim/.vim/plugin/delimitMate.vim	/^function! s:init() "{{{$/;"	f
 install	vim/.vim/autoload/plug.vim	/^function! s:install(force, names)$/;"	f
 is_local_plug	vim/.vim/autoload/plug.vim	/^  function! s:is_local_plug(repo)$/;"	f
@@ -356,8 +365,11 @@ job_exit_cb	vim/.vim/autoload/plug.vim	/^function! s:job_exit_cb(self, data) abo
 job_out_cb	vim/.vim/autoload/plug.vim	/^function! s:job_out_cb(self, data) abort$/;"	f
 json	sauce/getsymbol.py	/^import json$/;"	i
 json	sauce/prepsauce.py	/^import json$/;"	i
+json	tmux/launch.py	/^import json$/;"	i
+json	tmux/mkd.py	/^import json$/;"	i
 last_non_empty_line	vim/.vim/autoload/plug.vim	/^function! s:last_non_empty_line(lines)$/;"	f
 lastline	vim/.vim/autoload/plug.vim	/^function! s:lastline(msg)$/;"	f
+libtmux	tmux/launch.py	/^import libtmux$/;"	i
 lines	vim/.vim/autoload/plug.vim	/^function! s:lines(msg)$/;"	f
 load_plugin	vim/.vim/autoload/plug.vim	/^function! s:load_plugin(spec)$/;"	f
 loaded_names	vim/.vim/autoload/plug.vim	/^function! s:loaded_names()$/;"	f
@@ -372,13 +384,17 @@ lpad	vim/.vim/autoload/plug.vim	/^function! s:lpad(str, len)$/;"	f
 main	sauce/sauce-decorators/scripts/os-decorators.sh	/^main(){$/;"	f
 main	sauce/sauce-decorators/scripts/window-decorators.sh	/^main() {$/;"	f
 main	sauce/tmux/battery_status_fg.sh	/^main() {$/;"	f
+mkwall	tmux/launch.py	/^def mkwall(t, n, override=False):$/;"	f
 names	vim/.vim/autoload/plug.vim	/^function! s:names(...)$/;"	f
 new_window	vim/.vim/autoload/plug.vim	/^function! s:new_window()$/;"	f
 nvim_cb	vim/.vim/autoload/plug.vim	/^function! s:nvim_cb(job_id, data, event) dict abort$/;"	f
 option_init	vim/.vim/plugin/delimitMate.vim	/^function! s:option_init(name, default) "{{{$/;"	f
 os	sauce/getsymbol.py	/^import os$/;"	i
 os	sauce/prepsauce.py	/^import os$/;"	i
+os	tmux/launch.py	/^import os$/;"	i
+os	tmux/mkd.py	/^import os$/;"	i
 p	sauce/getsymbol.py	/^p = os.path.join(os.path.dirname(os.path.realpath(__file__)), "theme.json")$/;"	v
+p	tmux/mkd.py	/^    p = os.path.dirname(os.path.realpath(__file__))$/;"	v
 parse_options	vim/.vim/autoload/plug.vim	/^function! s:parse_options(arg)$/;"	f
 path	vim/.vim/autoload/plug.vim	/^  function! s:path(path)$/;"	f
 plug#	vim/.vim/autoload/plug.vim	/^function! plug#(repo, ...)$/;"	f
@@ -497,10 +513,12 @@ s:yellow	vim/.vim/colors/challenger_deep.vim	/^let s:yellow = { "gui": "#ffe9aa"
 saucePath	sauce/prepsauce.py	/^    saucePath = os.path.join(home, ".colorSauce")$/;"	v
 save_cpo	vim/.vim/plugin/delimitMate.vim	/^let save_cpo = &cpo$/;"	v
 section	vim/.vim/autoload/plug.vim	/^function! s:section(flags)$/;"	f
+server	tmux/launch.py	/^    server = libtmux.Server()$/;"	v
 set	sauce/.sauceTmux	/^set() {$/;"	f
 setw	sauce/.sauceTmux	/^setw() {$/;"	f
 shellesc	vim/.vim/autoload/plug.vim	/^function! s:shellesc(arg)$/;"	f
 shellesc_cmd	vim/.vim/autoload/plug.vim	/^function! s:shellesc_cmd(arg)$/;"	f
+sks	tmux/mkd.py	/^    sks = [('float', 'green'), ('hotkey', 'yellow')]$/;"	v
 snapshot	vim/.vim/autoload/plug.vim	/^function! s:snapshot(force, ...) abort$/;"	f
 source	vim/.vim/autoload/plug.vim	/^function! s:source(from, ...)$/;"	f
 spawn	vim/.vim/autoload/plug.vim	/^function! s:spawn(name, cmd, opts)$/;"	f
@@ -515,6 +533,7 @@ syntax	vim/.vim/autoload/plug.vim	/^function! s:syntax()$/;"	f
 sys	sauce/prepsauce.py	/^import sys$/;"	i
 system	vim/.vim/autoload/plug.vim	/^function! s:system(cmd, ...)$/;"	f
 system_chomp	vim/.vim/autoload/plug.vim	/^function! s:system_chomp(...)$/;"	f
+testp	tmux/mkd.py	/^    testp = os.path.join(home, ".tests")$/;"	v
 theme	sauce/prepsauce.py	/^    theme = os.path.join(home, ".dotfiles\/sauce\/theme.json")$/;"	v
 tick	vim/.vim/autoload/plug.vim	/^function! s:tick()$/;"	f
 toHex	sauce/prepsauce.py	/^def toHex():$/;"	f
@@ -534,4 +553,6 @@ warn	vim/.vim/autoload/plug.vim	/^function! s:warn(cmd, msg)$/;"	f
 which_os	sauce/sauce-decorators/scripts/helpers.sh	/^which_os() {$/;"	f
 which_window	sauce/sauce-decorators/scripts/helpers.sh	/^which_window() {$/;"	f
 with_cd	vim/.vim/autoload/plug.vim	/^function! s:with_cd(cmd, dir)$/;"	f
+wks	tmux/mkd.py	/^    wks = ('window_index', 'window_name', 'start_directory')$/;"	v
+ws	tmux/mkd.py	/^    ws = [(1, 'main', home),$/;"	v
 xml	sauce/prepsauce.py	/^import xml.etree.ElementTree as ET$/;"	i
