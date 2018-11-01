@@ -36,6 +36,7 @@ function tt(){
 
 
 # aliases
+alias -- -='cd $OLDPWD'
 alias ..='cd ..'
 alias ...='cd ../..'
 alias ....='cd ../../..'

@@ -49,7 +49,7 @@ autocmd VimEnter *
 	\ |   	wincmd w
 	\ | endif
 
-set backupdir=/Users/max/.vim_backups/
+set directory=~/.cache/vim/swapfiles
 set undodir=~/.vim/undo-dir
 set undofile
 
@@ -139,8 +139,17 @@ endif
 set so=6
 set foldmethod=indent
 set foldlevel=99
+
+augroup numbertoggle
+  autocmd!
+  autocmd BufEnter,FocusGained,InsertLeave * set relativenumber
+  autocmd BufLeave,FocusLost,InsertEnter   * set norelativenumber
+augroup END
+
 let g:github_enterprise_urls = ['http://git.baltic-online.de']
 let g:fugitive_gitlab_domains = ['https://git.baltic-online.de']
 
+" just show 'tabline' for buffers if more than one buffer is open
 let g:airline#extensions#tabline#buffer_min_count =2
+" no header (cowsay) in startify
 let g:startify_custom_header = []

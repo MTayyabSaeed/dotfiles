@@ -10,13 +10,13 @@ set t_Co=256
 let g:colors_name = "hightechbanana"
 
 hi Cursor guifg=#262626 guibg=#d7ffff guisp=#d7ffff gui=NONE ctermfg=235 ctermbg=195 cterm=NONE
-hi CursorLineNr   term=bold ctermfg=NONE gui=bold guifg=#71c671
+hi CursorLineNr term=bold ctermfg=NONE gui=bold guifg=#ffd75f
 hi Ignore guifg=#60666b guibg=NONE guisp=NONE gui=NONE ctermfg=242 ctermbg=NONE cterm=NONE
 hi VertSplit guifg=#444444 guibg=#444444 guisp=#444444 gui=NONE ctermfg=238 ctermbg=238 cterm=NONE
 hi NonText guifg=#949494 guibg=NONE guisp=NONE gui=NONE ctermfg=246 ctermbg=NONE cterm=NONE
 
 hi Normal guifg=#e0e0e0 guibg=NONE guisp=#26292c gui=NONE ctermfg=254 ctermbg=NONE cterm=NONE
-hi LineNr guifg=#1793d1 guibg=NONE guisp=#2c2f31 gui=NONE ctermfg=239 ctermbg=none cterm=NONE
+hi LineNr guifg=#71c671 guibg=NONE guisp=#2c2f31 gui=NONE ctermfg=239 ctermbg=none cterm=NONE
 
 hi Comment guifg=#60666b guibg=NONE guisp=NONE gui=NONE ctermfg=242 ctermbg=NONE cterm=NONE
 hi Todo guifg=#798188 guibg=NONE guisp=NONE gui=bold ctermfg=66 ctermbg=NONE cterm=bold
