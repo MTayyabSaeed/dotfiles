@@ -76,6 +76,9 @@ set tabstop=4
 " * truecolor
 set termguicolors
 
+" * fix airline-lag on leaving insert-mode
+set ttimeoutlen=50
+
 " * dont wrap text
 set tw=0
 
@@ -138,12 +141,14 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree")
 
 " * move to correct buffer after launching w Nerdtree and Startify
 autocmd VimEnter *
- \   if !argc()
+ \  if !argc()
  \ |  Startify
  \ |    NERDTree
  \ |    wincmd w
  \ | endif
 
+" * call the OpenBarfn on Buflaunch
+au BufEnter * | call OpenBar()
 
 
 " == augroups ================================================================
@@ -163,7 +168,6 @@ augroup numbertoggle
 augroup END
 
 
-
 " == mappings ================================================================
 " ============================================================================
 
@@ -175,7 +179,6 @@ nn <C-y> 4<C-y>
 
 " * toggle NerdTree
 map <C-n> :NERDTreeToggle<CR>
-
 " * new mappings for actual tabs (to cope with buffer-nav-bindings)
 map <tj> :tabn<cr>
 map <tk> :tabp<cr>
@@ -196,6 +199,9 @@ nmap <C-f> :CtrlPTag<cr>
 " * save everything and get out of here
 nmap <C-X> :wqa!<cr>
 
+" * toggle tagbar
+nmap <F8> :TagbarToggle<cr>
+"
 " * tmux-bindings
 nmap <silent> {Left-Mapping} :TmuxNavigateLeft<cr>
 nmap <silent> {Down-Mapping} :TmuxNavigateDown<cr>
@@ -290,5 +296,15 @@ function! ToggleRelativeNumber()
     set norelativenumber
   else
     set relativenumber
+  endif
+endfunction
+
+
+" * open tagbar in js or python if cur file has > 50l
+function OpenBar()
+  if (&ft=='python' || &ft=='javascript')
+	if (line('$') > 50)
+	  :TagbarOpen
+	endif
   endif
 endfunction
