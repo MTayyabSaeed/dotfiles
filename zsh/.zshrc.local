@@ -111,9 +111,6 @@ bindkey -M vicmd v edit-command-line
 # * use vi-bindings on launch
 autoload -U edit-command-line
 
-# * use vi-bindings as default (TODO: check redundancy of last three settings)
-bindkey -v
-
 # * history-management
 HISTFILE=~/.zsh_history
 HISTSIZE=10000
@@ -129,5 +126,5 @@ setopt AUTO_CD
 # * try to correct spelling of commands
 setopt correct
 
-# * this HAS to be redundant, but its lunchtime, checking that later
-zle -N edit-command-line
+# * disable ctrl+d behaviour (for native handling in tmux)
+setopt IGNORE_EOF
