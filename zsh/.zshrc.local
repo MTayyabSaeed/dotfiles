@@ -1,3 +1,16 @@
+# zshrc.local (sourced after prezto) maintained by github.com/2357mam
+# requires $HOME/.colorSauce, $HOME/things/tmux/launch.py
+# for both, check the dotfiles-repo of the maintainer mentioned above
+
+
+# 	I. fix locale if needed
+#  II. functions
+# III. aliases
+#  IV. exports
+#   V. zle-bindings
+#  VI. general config
+
+
 # == general init  ===========================================================
 # ============================================================================
 
@@ -111,6 +124,7 @@ bindkey -M vicmd v edit-command-line
 # * use vi-bindings on launch
 autoload -U edit-command-line
 
+#
 # * history-management
 HISTFILE=~/.zsh_history
 HISTSIZE=10000
@@ -120,11 +134,14 @@ SAVEHIST=10000
 # * path
 PATH=/usr/local/bin:$PATH
 
+
 # * if an issued command can't be execd as a cmd, but is name of dir, goto dir
 setopt AUTO_CD
 
+
 # * try to correct spelling of commands
 setopt correct
+
 
 # * disable ctrl+d behaviour (for native handling in tmux)
 setopt IGNORE_EOF
