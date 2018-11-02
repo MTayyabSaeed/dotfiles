@@ -124,7 +124,7 @@ bindkey -M vicmd v edit-command-line
 # * use vi-bindings on launch
 autoload -U edit-command-line
 
-#
+
 # * history-management
 HISTFILE=~/.zsh_history
 HISTSIZE=10000
