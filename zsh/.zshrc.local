@@ -1,16 +1,23 @@
+# == general init  ===========================================================
+# ============================================================================
+
+# * fix locale
 if [[ -z "$LC_ALL" ]]; then
 	export LC_ALL='en_US.UTF-8'
 fi
 
-# makes colors and symbols accessible system-wide
+# * makes colors and symbols accessible system-wide
 export SAUCE="$HOME/.colorSauce"
 
-
-# starts the tmux-sessions with configured params
+# * starts the tmux-sessions with configured params
 python3 $HOME/.dotfiles/tmux/launch.py
 
 
-# starts vim with current clipboard as buffer
+
+# == functions ===============================================================
+# ============================================================================
+
+# * starts vim with current clipboard as buffer
 function clipToVim {
 	t=$HOME/things/tmp/.clipboard
 	echo >! "$t"
@@ -18,7 +25,7 @@ function clipToVim {
 }
 
 
-# toggle-logic between tmux-sessions 
+# * toggle-logic between tmux-sessions 
 function tmuxToggle(){
 	tmux send-keys -t float:"bg" "tmux switch-client -t tmp" Enter
 	tmux send-keys -t hotkey:"bg" "tmux switch-client -t float" Enter
@@ -26,7 +33,7 @@ function tmuxToggle(){
 }
 
 
-# handler for the tmuxToggle
+# * handler for the tmuxToggle
 function tt(){
 	tmux new -d -s tmp;
 	tmux send-keys -t toggler tmuxToggle Enter;
@@ -35,13 +42,18 @@ function tt(){
 }
 
 
-# aliases
+
+# == aliases =================================================================
+# ============================================================================
+
+# * nav
 alias -- -='cd $OLDPWD'
 alias ..='cd ..'
 alias ...='cd ../..'
 alias ....='cd ../../..'
 alias ll='ls -alF'
 
+# * commands
 alias ctags="`brew --prefix`/bin/ctags"
 alias emacs="/usr/local/Cellar/emacs-plus/HEAD-00027ff/bin/emacs-27.0.50"
 alias vi="vim"
@@ -49,14 +61,19 @@ alias vim="/usr/local/Cellar/vim/8.1.0450/bin/vim"
 alias sauce="source $HOME/.zshrc"
 alias screenfetch="screenfetch -E"
 
+# * ssh
 alias sroot="ssh root@10.0.0.165"
 alias sgeb="ssh max@10.144.42.227"
 
+# * goodies
 alias hidedesk="~/.scripts/hidedesk.sh"
 alias showdesk="~/.scripts/showdesk.sh"
 
 
-# exports
+
+# == exports =================================================================
+# ============================================================================
+
 export EDITOR=vim
 export VISUAL=vim
 
@@ -65,31 +82,52 @@ export HISTCONTROL=ignoredups:erasedups
 export PROMPT_COMMAND="history -a; history -c; history -r; $PROMPT_COMMAND"
 
 
-# bindings
+
+# == zle-bindings ============================================================
+# ============================================================================
+
+# * use suggested completion
 bindkey '^ ' autosuggest-accept
+
+# * clear (remapped from ^l for native tmux/vim-flow)
 bindkey "^O" clear-screen
+
+# * left/right in entry
 bindkey '^[[1;9C' forward-word
 bindkey '^[[1;9D' backward-word
+
+# * up/down in history
 bindkey "^[[A" history-beginning-search-backward
 bindkey "^[[B" history-beginning-search-forward
+
+# * vi-motions and keys in cmdl
 bindkey -M vicmd v edit-command-line
 
 
-# config
+
+# == general config ==========================================================
+# ============================================================================
+
+# * use vi-bindings on launch
 autoload -U edit-command-line
+
+# * use vi-bindings as default (TODO: check redundancy of last three settings)
 bindkey -v
 
+# * history-management
 HISTFILE=~/.zsh_history
 HISTSIZE=10000
 SAVEHIST=10000
 
 
-# path
+# * path
 PATH=/usr/local/bin:$PATH
 
-
-# options
+# * if an issued command can't be execd as a cmd, but is name of dir, goto dir
 setopt AUTO_CD
+
+# * try to correct spelling of commands
 setopt correct
 
+# * this HAS to be redundant, but its lunchtime, checking that later
 zle -N edit-command-line

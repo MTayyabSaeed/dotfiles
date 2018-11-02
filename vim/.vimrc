@@ -74,7 +74,7 @@ call vundle#begin()
     Plugin 'flazz/vim-colorschemes'
     Plugin 'gabrielelana/vim-markdown'
     Plugin 'git://git.wincent.com/command-t.git'
-    Plugin 'kien/ctrlp.vim'
+    Plugin 'ctrlpvim/ctrlp.vim'
     Plugin 'Konfekt/FastFold'
     Plugin 'ludovicchabant/vim-gutentags'
     Plugin 'majutsushi/tagbar'
@@ -156,7 +156,7 @@ nmap gT :bprevious<CR>
 nmap <C-X> :wqa!<cr>
 
 " > CtrlPTag
-nmap <leader>. :CtrlPTag<cr>
+nmap <C-f> :CtrlPTag<cr>
 
 " > tmux-bindings
 nmap <silent> {Left-Mapping} :TmuxNavigateLeft<cr>
@@ -211,7 +211,7 @@ colorscheme hightechbanana
 " sane colorvals, err-barcolors same as globals
 hi SpellBad ctermfg=NONE ctermbg=NONE guifg=NONE guibg=NONE cterm=undercurl
 hi SpellCap ctermfg=NONE ctermbg=NONE guifg=NONE guibg=NONE cterm=undercurl
-
+hi SignColumn ctermbg=NONE guibg=NONE
 
 
 " set Vim-specific sequences for RGB colors
@@ -222,7 +222,7 @@ let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
 let g:airline#extensions#tabline#buffer_min_count =2
 
 " enable tabline via airline
-let g:airline#extensions#tabline#enabled = 0
+let g:airline#extensions#tabline#enabled = 1
 
 " just show fname instead of full path in airline
 let g:airline#extensions#tabline#fnamemod = ':t'

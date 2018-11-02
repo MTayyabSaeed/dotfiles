@@ -20249,6 +20249,8 @@
 	<true/>
 	<key>HotkeyMigratedFromSingleToMulti</key>
 	<true/>
+	<key>IRMemory</key>
+	<integer>0</integer>
 	<key>LoadPrefsFromCustomFolder</key>
 	<true/>
 	<key>NSFontPanelAttributes</key>
@@ -20328,11 +20330,11 @@
 	<key>NSWindow Frame SUUpdateAlert</key>
 	<string>410 376 620 392 0 0 1440 877 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>3130 709 814 486 2560 0 2560 1417 </string>
+	<string>3130 905 928 394 2560 0 2560 1417 </string>
 	<key>NSWindow Frame UKCrashReporter</key>
 	<string>99 293 592 584 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>2866 150 1890 1203 2560 0 2560 1417 </string>
+	<string>2560 0 2560 916 2560 0 2560 1417 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>1637 -122 850 459 1440 -540 2560 1417 </string>
 	<key>NeverWarnAboutMeta</key>
@@ -22744,7 +22746,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2018-10-30T10:26:13Z</date>
+	<date>2018-11-01T09:47:37Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>Secure Input</key>
